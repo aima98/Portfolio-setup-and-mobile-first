@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-.home{
+.home {
   height: auto;
   width: 100%;
   margin-bottom: 7em;
@@ -58,9 +58,17 @@ body {
 }
 
 .logo-placeholder {
-  padding-top: 12px;
   animation-name: animation;
   animation-duration: 2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 12px;
+  top: calc(50% - 40px / 2);
 }
 
 .nav-links {
@@ -114,7 +122,6 @@ body {
   margin: 0.3em;
   padding-top: 2em;
 }
-
 
 main {
   position: relative;
@@ -178,23 +185,10 @@ header {
   border-radius: 8px;
 }
 
-.logo-placeholder {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  position: absolute;
-  width: 100px;
-  height: 40px;
-  left: 12px;
-  top: calc(50% - 40px / 2);
-}
-
 .social-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   color: #7f8cff;
   margin: 0.6em;
   line-height: 24px;
