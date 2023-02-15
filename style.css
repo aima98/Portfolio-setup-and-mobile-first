@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     font-family: "Poppins", Verdana, sans-serif;
   }
@@ -5,13 +7,20 @@
 body {
     margin: 0;
 }
+
+main{
+    position: relative;
+    width: 375px;
+    height: 5410px;
+    background: #F7F7F9;
+}
   
 header {
     display: flex;
     padding: 40px 20px;
 }
 
-header-background{
+.header-background{
     position: absolute;
     width: 375px;
     height: 718px;
@@ -19,7 +28,7 @@ header-background{
     top: 0px;
 }
 
-header-shapes{
+.header-shapes{
     position: absolute;
     width: 462px;
     height: 587.15px;
@@ -57,30 +66,37 @@ header-shapes{
     height: 48px;
     left: 24px;
     top: 5317px;
+    background: #FFFFFF;
+    border-radius: 8px;
 }
 
-.base_about_my_self{
+.logo-placeholder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
     position: absolute;
-    width: 375px;
-    height: 1263px;
-    left: 375px;
-    top: 4769px;
+    width: 100px;
+    height: 40px;
+    left: 12px;
+    top: calc(50% - 40px/2);
 }
 
-.contact_me{
-    position: absolute;
-    width: 375px;
-    height: 779px;
-    left: 0px;
-    top: 5410px;
-
-    width: 80%;
-  background: #6070ff;
-  border-top-left-radius: 80px;
-  padding: 3rem 2rem;
-  text-align: center;
-  background-image: url("./img/contact-form-background.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  padding-top: 90px;
+.my-logo{
+    width: 76px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070FF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
+
+
+
