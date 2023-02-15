@@ -1,0 +1,86 @@
+* {
+    font-family: "Poppins", Verdana, sans-serif;
+  }
+
+body {
+    margin: 0;
+}
+  
+header {
+    display: flex;
+    padding: 40px 20px;
+}
+
+header-background{
+    position: absolute;
+    width: 375px;
+    height: 718px;
+    left: 0px;
+    top: 0px;
+}
+
+header-shapes{
+    position: absolute;
+    width: 462px;
+    height: 587.15px;
+    left: -34px;
+    top: 104px;
+}
+
+.container{
+    position: absolute;
+    visibility: hidden;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(24, 30, 37, 0.64) 0%, rgba(24, 30, 37, 0.08) 84%, rgba(24, 30, 37, 0.02) 92%, rgba(24, 30, 37, 0) 100%);
+}
+
+.toolbar_container{
+    position: absolute;
+    visibility: hidden;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #181E25;
+}
+
+.normal_button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    position: absolute;
+    width: 142px;
+    height: 48px;
+    left: 24px;
+    top: 5317px;
+}
+
+.base_about_my_self{
+    position: absolute;
+    width: 375px;
+    height: 1263px;
+    left: 375px;
+    top: 4769px;
+}
+
+.contact_me{
+    position: absolute;
+    width: 375px;
+    height: 779px;
+    left: 0px;
+    top: 5410px;
+
+    width: 80%;
+  background: #6070ff;
+  border-top-left-radius: 80px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-image: url("./img/contact-form-background.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+}
