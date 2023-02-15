@@ -8,6 +8,114 @@ body {
   margin: 0;
 }
 
+.home{
+  height: auto;
+  width: 100%;
+  margin-bottom: 7em;
+  border: 1px solid #e9e9eb;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  color: #6070ff;
+}
+
+.menu-close-btn li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.menu-close-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu-close-btn li a:hover {
+  box-shadow: 0 3px 0 white;
+}
+
+.menu-close {
+  cursor: pointer;
+}
+
+@keyframes animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-placeholder {
+  padding-top: 12px;
+  animation-name: animation;
+  animation-duration: 2s;
+}
+
+.nav-links {
+  float: right;
+  margin-left: auto;
+}
+
+.menu-bar {
+  display: block;
+  list-style: none;
+}
+
+.menu-bar .menu-item {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  background: #6070ff;
+  height: 120%;
+  width: 100%;
+  border-radius: 15px;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  mix-blend-mode: multiply;
+}
+
+.close-menu-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em 2em;
+}
+
+.hamburger-button {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #172b4d;
+  width: 80%;
+  margin: 0.3em;
+  padding-top: 2em;
+}
+
+
 main {
   position: relative;
   width: 375px;
@@ -82,18 +190,24 @@ header {
   top: calc(50% - 40px / 2);
 }
 
-.my-logo {
-  width: 76px;
-  height: 20px;
+.social-title {
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #6070ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin: 0.6em;
+  line-height: 24px;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  padding: 10px;
+  margin-bottom: 5em;
+  gap: 1.1em;
 }
