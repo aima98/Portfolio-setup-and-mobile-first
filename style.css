@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+  margin: 0.01em;
+  padding: 0.01em;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", Verdana, sans-serif;
@@ -11,11 +18,26 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #6070ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  width: 370px;
+  height: 78px;
+  left: 20px;
+  top: 90;
+}
+
+.logo-placeholder {
+  padding-top: 10px;
 }
 
 .nav-links {
   float: right;
-  margin-left: auto;
+  margin-left: 10px;
 }
 
 .hamburger-button {
@@ -30,38 +52,37 @@ body {
   width: 80%;
   padding-top: 2em;
   position: relative;
-  top: 100px;
+  top: 20px;
 }
 
 .main {
   position: absolute;
-  background: #f7f7f9;
+  background: #fff;
   padding-left: 30px;
-  background-image: url(./images/header-shapes\ mobile.png);
+  padding-right: 50px;
   background-size: 100% 100%;
+  background-image: url(./images/header-shapes\ mobile.png);
   height: 730px;
-  top: 0;
-  background-position-x: -10px;
-  background-position-y: 10px;
+  top: 10px;
 }
 
 header {
   display: flex;
-  padding: 40px 20px;
-  position: fixed;
-  width: 100%;
+  padding: 10px 0px;
+  position: relative;
+  width: 98%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  margin: 0;
 }
 
-.header-background {
+.menu-bar {
   position: absolute;
   width: 375px;
   height: 718px;
-  left: 0;
-  top: 0;
+  left: 360px;
+  top: 900;
 }
 
 .social-title {
@@ -74,7 +95,8 @@ header {
   order: 0;
   flex-grow: 0;
   position: relative;
-  top: 100px;
+  top: 35px;
+  font-family: 'Poppins';
 }
 
 .social-icons {
@@ -83,13 +105,36 @@ header {
   flex-direction: row;
   gap: 1.1em;
   position: relative;
-  top: 100px;
+  top: 30px;
   padding: 10px;
   padding-left: 0;
+  width: 170.17px;
+  height: 20px;
 }
 
 .about-me {
   padding-right: 17px;
   position: relative;
-  top: 100px;
+  width: 327px;
+  height: 146px;
+  top: 25px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100%;
+  position: absolute;
+  min-height: 10vh;
+  width: 100%;
+  height: 10;
+  background: #ffff;
 }
