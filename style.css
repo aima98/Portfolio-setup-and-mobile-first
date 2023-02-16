@@ -47,19 +47,7 @@ body {
   cursor: pointer;
 }
 
-@keyframes animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .logo-placeholder {
-  animation-name: animation;
-  animation-duration: 2s;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -153,7 +141,6 @@ header {
 
 .container {
   position: absolute;
-  visibility: hidden;
   left: 0;
   right: 0;
   top: 0;
