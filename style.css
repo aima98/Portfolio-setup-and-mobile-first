@@ -116,16 +116,16 @@ header {
   display: flex;
   flex: 1;
   flex-direction: column;
+  background: #fff;
   background-repeat: no-repeat;
   background-position: 100%;
+  background-size: 100% 100%;
+  background-image: url(./images/header-shapes\ mobile.png);
   position: absolute;
   min-height: 10vh;
   width: 100%;
-  background: #fff;
   padding-left: 30px;
   padding-right: 50px;
-  background-size: 100% 100%;
-  background-image: url(./images/header-shapes\ mobile.png);
   height: 730px;
   top: 100px;
 }
