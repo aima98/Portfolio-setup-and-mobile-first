@@ -10,10 +10,14 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Install](#install)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [⭐️ Show your support](#support)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -38,6 +42,35 @@ Linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Key Features <a name="key-features"></a>
+
+- **No linter errors**
+- **Using of correct GitHub flow**
+- **Documenting in a professional way**
+- **Following best practices for HTML and CSS**
+- **Creating Header and Headline section**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- **Visual Studio Code**
+- **Git Bash**
+
+### Setup
+
+Clone this repository to your desired folder:
+- **cd your-folder**
+- **git clone https://github.com/aima98/Portfolio-setup-and-mobile-first**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
@@ -47,6 +80,12 @@ Linters
 - GitHub: [@aima98](https://github.com/aima98)
 - Twitter: [@NejjariOumaima](https://twitter.com/NejjariOumaima?t=RtmpuP_lmHYVD3EiP4AeMg&s=03)
 - LinkedIn: [Oumaima Nejjari](https://www.linkedin.com/in/oumaima-nejjari-375065171/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Building a complete Portfolio website**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,6 +102,12 @@ Contributions, issues, and feature requests are welcome!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank all of my Microverse mates and mentors for their support.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project feel comfortable to endorse the author. You can contact the author via Twitter or Linkedin or directly message at oumanj1998@gmail.com.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
