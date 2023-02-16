@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0.01em;
+  padding: 0.01em;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+.logo {
+  font-family: "Poppins", Verdana, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  color: #6070ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  width: 100px;
+  height: 78px;
+  left: 20px;
+  top: 9px;
+}
+
+.logo-placeholder {
+  padding-top: 10px;
+}
+
+.nav-links {
+  float: right;
+  margin-left: 10px;
+}
+
+.hamburger-button {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #172b4d;
+  width: 80%;
+  padding-top: 2em;
+  position: relative;
+  top: 20px;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  position: relative;
+  width: 98%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.menu-bar {
+  position: absolute;
+  width: 100px;
+  height: 718px;
+  left: 360px;
+}
+
+.social-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
+  line-height: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+  top: 35px;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 1.1em;
+  position: relative;
+  top: 30px;
+  padding: 10px;
+  padding-left: 0;
+  width: 170.17px;
+  height: 20px;
+}
+
+.about-me {
+  padding-right: 17px;
+  position: relative;
+  width: 327px;
+  height: 146px;
+  top: 25px;
+  font-family: "Poppins", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100% 100%;
+  background-image: url(./images/header-shapes\ mobile.png);
+  position: absolute;
+  min-height: 10vh;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 50px;
+  height: 730px;
+  top: 100px;
+}
