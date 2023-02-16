@@ -25,14 +25,14 @@ body {
   color: #6070ff;
 }
 
-.menu-close-btn li a {
+.menu-close-btn li a{
   text-decoration: none;
   color: #fff;
   font-size: 32px;
   font-weight: 500;
 }
 
-.menu-close-btn {
+.menu-close-btn{
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -192,3 +192,5 @@ header {
   margin-bottom: 5em;
   gap: 1.1em;
 }
+
+
