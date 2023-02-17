@@ -277,7 +277,7 @@ button:hover {
   border: 1px solid aqua;
 }
 
-.about-container{
+.about-container {
   padding: 0 15px;
   display: flex;
   flex: 1;
@@ -290,4 +290,3 @@ button:hover {
   height: 730px;
   top: 100px;
 }
-
