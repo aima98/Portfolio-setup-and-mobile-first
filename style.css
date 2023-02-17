@@ -129,3 +129,16 @@ header {
   height: 730px;
   top: 100px;
 }
+
+.about-myself-title{
+  position: relative;
+  top: 718px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+  width: 10px;
+  font-weight: 800;
+  line-height: 50px;
+  padding-top: 2em;
+  width: 80%;
+}
