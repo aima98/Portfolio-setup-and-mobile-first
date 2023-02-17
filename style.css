@@ -142,3 +142,148 @@ header {
   padding-top: 2em;
   width: 80%;
 }
+
+.resume-title-border{
+
+
+}
+
+.works{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 80px;
+  border-radius: 15px;
+}
+
+.card{
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.card1 {
+  background: url(./img/Snapshoot-Portfolio-1.png) no-repeat center center;
+}
+
+.card2 {
+  background: url(./img/Snapshoot-Portfolio-2.png) no-repeat center center;
+}
+
+.card3 {
+  background: url(./img/Snapshoot-Portfolio-3.png) no-repeat center center;
+}
+
+.card4 {
+  background: url(./img/Snapshoot-Portfolio-4.png) no-repeat center center;
+}
+
+.card-languages {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 210px;
+  margin-right: auto;
+  padding: 0 10px;
+  font-family: "Poppins", Verdana, sans-serif;
+  flex-wrap: wrap;
+}
+
+.card-lang1 {
+  width: 50px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang2 {
+  width: 35px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang3 {
+  width: 80px;
+  text-align: center;
+  background: #ebebff;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 7px;
+  height: 23px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.card-lang4 {
+  display: none;
+}
+
+.about-myself{
+  width: 100%;
+  height: auto;
+  border: 1px solid #fff;
+  border-top-right-radius: 80px;
+  background: #fff;
+  padding-top: 100px;
+  margin-bottom: 5em;
+}
+
+.my-resume{
+  list-style: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 0.5em;
+  padding: 0;
+}
+
+.resume-title{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-title-border{
+
+}
+
+.connect{
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8cff;
+}
+
+.prog-languages li {
+  background: #f7f7f9;
+  width: 270px;
+  height: 50px;
+  margin: 3px;
+  font-size: 15px;
+  font-style: normal;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.prog-languages img {
+  padding-right: 20px;
+}
+
+button:hover {
+  border: 1px solid aqua;
+}
