@@ -143,9 +143,10 @@ header {
 
 .works {
   display: grid;
-  grid-template-rows: auto auto auto auto;
-  gap: 80px;
-  border-radius: 15px;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  margin: -27px;
+  margin-top: 80px;
 }
 
 .card {
@@ -273,10 +274,6 @@ header {
   padding-right: 20px;
 }
 
-button:hover {
-  border: 1px solid aqua;
-}
-
 .about-container {
   padding: 0 15px;
   display: flex;
@@ -289,4 +286,172 @@ button:hover {
   padding-right: 50px;
   height: 730px;
   top: 100px;
+}
+
+.item {
+  background-color: white;
+  width: 327px;
+  height: 568px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+  margin-bottom: 80px;
+}
+
+.title-project2 {
+  margin-top: 0;
+  margin-bottom: -12px;
+}
+
+.title-project {
+  margin-top: -1px;
+  margin-bottom: -15px;
+}
+
+.item img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+
+.item h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-left: 12px;
+}
+
+.type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+  margin-left: 13px;
+}
+
+.type img {
+  width: 8px;
+  height: 8px;
+  fill: #505f79;
+  border-color: #172b4d;
+  border-radius: 30px;
+}
+
+.t1 {
+  color: #344563;
+}
+
+.t2,
+.t3 {
+  color: #7a867a;
+}
+
+.text {
+  width: 275px;
+  height: 76px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  color: #344563;
+  margin: 0 0 2px 12px;
+}
+
+.tech {
+  float: right;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  width: 180px;
+  margin-left: -30px;
+  text-decoration: none;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.language {
+  width: fit-content;
+  display: inline-block;
+  height: 26px;
+  color: #6070ff;
+  padding: 4px;
+  padding-left: 1px;
+  padding-right: 16px;
+  margin-right: 8px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+button {
+  background-color: white;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+  width: 160px;
+  height: 44px;
+  margin-top: 20px;
+}
+
+.item button {
+  margin-left: 12px;
+}
+
+button:hover {
+  color: white;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+button:active {
+  background: #2230d2;
+  color: white;
+}
+
+.about {
+  background-image: none;
+  background-color: white;
+  width: 355px;
+  height: 1070px;
+  border: solid white;
+  border-radius: 0 50px 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about h2 {
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  margin-bottom: 0;
+}
+
+.about-me-resume {
+  width: 360px;
+  margin-bottom: 0;
+}
+
+.see-project {
+  margin-top: 4px;
 }
