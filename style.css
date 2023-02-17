@@ -130,32 +130,25 @@ header {
   top: 100px;
 }
 
-.about-myself-title{
+.about-myself-title {
   position: relative;
-  top: 718px;
+  top: 200px;
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
   width: 10px;
-  font-weight: 800;
   line-height: 50px;
   padding-top: 2em;
-  width: 80%;
 }
 
-.resume-title-border{
-
-
-}
-
-.works{
+.works {
   display: grid;
   grid-template-rows: auto auto auto auto;
   gap: 80px;
   border-radius: 15px;
 }
 
-.card{
+.card {
   width: 327px;
   display: flex;
   flex-direction: column;
@@ -231,7 +224,7 @@ header {
   display: none;
 }
 
-.about-myself{
+.about-myself {
   width: 100%;
   height: auto;
   border: 1px solid #fff;
@@ -241,7 +234,7 @@ header {
   margin-bottom: 5em;
 }
 
-.my-resume{
+.my-resume {
   list-style: none;
   color: black;
   font-weight: 500;
@@ -250,17 +243,13 @@ header {
   padding: 0;
 }
 
-.resume-title{
+.resume-title {
   padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.resume-title-border{
-
-}
-
-.connect{
+.connect {
   font-size: 16px;
   font-weight: 500;
   color: #7f8cff;
@@ -287,3 +276,18 @@ header {
 button:hover {
   border: 1px solid aqua;
 }
+
+.about-container{
+  padding: 0 15px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 50px;
+  height: 730px;
+  top: 100px;
+}
+
