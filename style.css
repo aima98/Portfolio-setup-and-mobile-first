@@ -8,6 +8,8 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Page 1 styling */
@@ -761,15 +763,17 @@ header {
 }
 
 .about-myself {
-  border-left: 0 solid #dfe1e6;
-  border-right: 1px solid #dfe1e6;
-  border-top-right-radius: 16px;
+  /* border-left: 0 solid #dfe1e6;
+  border-right: 1px solid #dfe1e6;*/
   width: 500px;
   margin-top: -700px;
   position: absolute;
   height: 1263px;
   left: 55px;
   top: 4280.5px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-top-right-radius: 16px; 
 }
 
 .about-container {
