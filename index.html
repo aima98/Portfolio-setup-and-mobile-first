@@ -220,8 +220,16 @@
     </section>
                                         <!-- page 6 -->
                                     <!-- Section 1 : Contact form -->
-    <section>
-
+    <section class="contact">
+        <img src="./images/A.png" alt="" class="contact-img">
+        <h2>Contact me</h2>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+        <form action="https://formspree.io/f/xgebkapy" method="POST"></form>
+              <input name="name" placeholder="Full Name" required type="text" class="user-name">
+              <input name="email"  placeholder="ex@example.com" type="email" class="user-email">
+              <textarea name="message" placeholder="write your message here" required type="message" class="message" maxlength="500"></textarea>
+              <button type="submit" class="submit-btn">Get in Touch</button>
+          </form>
     </section>
 </body>
 </html>
