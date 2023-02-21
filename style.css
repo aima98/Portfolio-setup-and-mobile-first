@@ -10,11 +10,6 @@ body {
   margin: 0;
   width: 100%;
   background: #e5e5e5;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  right: 50%;
 }
 
 /* Page 1 styling */
@@ -48,7 +43,12 @@ body {
 }
 
 .hamburger-button {
+  position: relative;
   cursor: pointer;
+  width: 27px;
+  height: 8px;
+  left: -30px;
+  top: 54px;
 }
 
 .title {
@@ -74,11 +74,21 @@ header {
   background: #fff;
 }
 
+.containerimg {
+  position: absolute;
+  width: 375px;
+  height: 718px;
+  left: 0;
+  top: 0;
+}
+
 .menu-bar {
   position: absolute;
-  width: 100px;
+  width: 27px;
   height: 718px;
-  left: 360px;
+  left: 347px;
+  top: 2px;
+  background: #fff;
 }
 
 .social-title {
@@ -121,21 +131,20 @@ header {
 }
 
 .container {
+  position: absolute;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  background: #fff;
+  background-image: url("./images/header-background-mobile.png");
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: 100% 100%;
-  background-image: url(./images/header-shapes\ mobile.png);
-  position: absolute;
   min-height: 10vh;
-  width: 100%;
+  width: 375px;
   padding-left: 30px;
   padding-right: 50px;
   height: 730px;
   top: 100px;
+  left: 19px;
 }
 
 /* Page 2 styling */
@@ -144,7 +153,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 3px;
   margin: -27px;
-  margin-top: 80px;
+  margin-top: -13px;
 }
 
 .card-container1 {
@@ -774,7 +783,7 @@ header {
   position: absolute;
   height: 1263px;
   left: 55px;
-  top: 4280.5px;
+  top: 4177px;
   border-top-right-radius: 16px;
   background: #e5e5e5;
 }
