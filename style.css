@@ -1082,67 +1082,54 @@ header {
 .contact-img2 {
   position: relative;
   width: 231px;
-  height: 906px;
-  left: 167px;
-  top: 137px;
+  height: 708px;
+  left: 176px;
+  top: -727px;
 }
 
-.contact h2 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  margin: 0;
-  margin-top: -820px;
-  color: #fff;
-}
-
-.contact {
-  position: absolute;
-  background-image: url(./images/A.png);
-  width: 231px;
-  height: 920px;
-  left: 0;
-  top: 5410px;
+.contact-img {
+  position: relative;
+  width: 396px;
+  height: 779px;
+  left: 11px;
+  top: 11px;
 }
 
 .contact p {
-  position: absolute;
+  position: relative;
   width: 327px;
   height: 102px;
-  left: 24px;
-  top: 4802px;
+  left: 48px;
+  top: -777px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #ebebff;
+  color: #EBEBFF;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
+.contact h2 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+  margin-top: -582px;
+  top: -809px;
+  left: 81px;
+  color: #fff;
 }
 
-.user-name {
-  position: absolute;
-  left: 6.4%;
-  right: 6.4%;
-  top: 92.26%;
-  bottom: 6.86%;
-}
-
-.user-email {
-  position: absolute;
-  left: 6.4%;
-  right: 6.4%;
-  top: 93.51%;
-  bottom: 5.6%;
+.contact {
+  position: relative;
+  width: 480px;
+  height: 920px;
+  left: 0px;
+  top: 1600px;
 }
 
 .user-name ::placeholder {
@@ -1160,31 +1147,69 @@ header {
   color: #172b4d;
 }
 
-textarea {
-  font-size: 20px;
-}
-
-input {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-size: 17px;
-  line-height: 20px;
-  color: #172b4d;
-  padding: 10px;
-}
-
-.message ::placeholder {
+.user-email ::placeholder {
   position: absolute;
   left: 16px;
   right: 38px;
-  top: 15px;
-  bottom: 15px;
+  top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+textarea {
+  position: absolute;
+  left: 42px;
+  top: 480px;
+  bottom: 10px;
+  width: 320px;
+  height: 170px;
+  border-radius: 8px;
+  margin-top: 20px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #b3bac5;
+  display: flex;
+  align-items: center;
+  color: #B3BAC5;
+}
+
+input {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 10px;
+  width: 322px;
+  top: -706px;
+  height: 48px;
+  left: 41px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-color: #FFFFFF;
+}
+
+textarea ::placeholder {
+  position: absolute;
+  left: 16px;
+  right: 38px;
+  top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
 }
 
 .submit-btn {
@@ -1193,10 +1218,18 @@ input {
   align-items: center;
   padding: 12px 16px;
   position: absolute;
-  width: 142px;
+  width: 146px;
   height: 48px;
-  left: 24px;
-  top: 5317px;
-  background: #fff;
+  left: 42px;
+  top: 690px;
   border-radius: 8px;
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  font-family: "Poppins", sans-serif;font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070FF;
 }
