@@ -8,9 +8,13 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
   width: 100%;
   background: #e5e5e5;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  right: 50%;
 }
 
 /* Page 1 styling */
@@ -1083,24 +1087,16 @@ header {
   position: relative;
   width: 231px;
   height: 708px;
-  left: 176px;
-  top: -727px;
-}
-
-.contact-img {
-  position: relative;
-  width: 396px;
-  height: 781px;
-  left: 11px;
-  top: 11px;
+  left: 162px;
+  top: 53px;
 }
 
 .contact p {
   position: relative;
   width: 327px;
   height: 102px;
-  left: 48px;
-  top: -777px;
+  left: 42px;
+  top: 726px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1117,18 +1113,27 @@ header {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin-top: -582px;
-  top: -802px;
-  left: 89px;
+  margin-top: -1300px;
+  top: 700px;
+  left: 76px;
   color: #fff;
+  width: 801px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .contact {
   position: relative;
-  width: 480px;
-  height: 920px;
-  left: 0;
-  top: 1600px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/A.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 789px;
+  margin-top: 1240px;
+  left: 1px;
 }
 
 .user-name ::placeholder {
@@ -1187,12 +1192,14 @@ input {
   line-height: 20px;
   padding: 10px;
   width: 322px;
-  top: -706px;
+  top: 800px;
   height: 48px;
   left: 41px;
   border-radius: 8px;
   margin-bottom: 20px;
-  border-color: #fff;
+  background-color: #fff;
+  border: solid #b3bac5;
+  border-width: 1px;
 }
 
 .submit-btn {
@@ -1206,8 +1213,6 @@ input {
   left: 42px;
   top: 690px;
   border-radius: 8px;
-  border-color: #fff;
-  background-color: #fff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1216,15 +1221,29 @@ input {
   text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
+  background-color: #fff;
+  border: solid #fff;
+  border-width: 1px;
 }
 
 .contact-img3 {
   position: absolute;
   width: 134px;
   height: 5px;
-  left: 136px;
+  left: 129px;
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
-  top: 777px;
+  top: 767px;
+}
+
+.contact button:hover {
+  color: white;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.contact button:active {
+  background: #2230d2;
+  color: white;
 }
