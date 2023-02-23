@@ -645,11 +645,27 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+  .img-version-mobile {
+    display: none;
+  }
+
+  p .mobile-para {
+    display: none;
+  }
+
+  h1 .mobile-title {
+    display: none;
+  }
+
+  h2 .mobile-version-h2 {
+    display: none;
+  }
+
   header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 9px -100px 9px 9px;
+    margin: 20px -100px 9px 9px;
     align-items: center;
     width: auto;
   }
@@ -661,6 +677,7 @@ button {
   }
 
   nav a.links {
+    font-family: "Poppins", sans-serif;
     margin-right: 35px;
     padding: 10px;
     font-weight: 500;
@@ -675,16 +692,21 @@ button {
     font-size: 22px;
     line-height: 20px;
     color: #6070ff;
-    animation: abdo;
-    animation-duration: 1200ms;
-    animation-timing-function: ease-in-out;
     position: relative;
+    text-decoration: none;
   }
 
-  .logo:hover {
-    transform: scale(1);
+  .hamburger-button {
+    display: none;
+  }  
+  
+  .menu-bar {
+    display: none;
   }
-
+  
+  .menu-button {
+    display: none;
+  }
   .menu {
     display: none;
   }
@@ -752,6 +774,7 @@ button {
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
+    text-decoration: none;
   }
 
   section.works {
@@ -856,7 +879,17 @@ button {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    margin-top: -80px;
+    margin-top: -87px;
+  }
+
+  h1.desktop-title1 {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    margin-top: -18px;
   }
 
   h2.mobile-version-h2 {
@@ -873,14 +906,25 @@ button {
     font-size: 18px;
     line-height: 24px;
     color: #344563;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  h2.desktop-version-h22 {
+    display: block;
+    width: 106px;
+    height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+    margin-right: 0px;
   }
 
   .mobile-version-li {
     display: none;
-  }
-
-  .desktop-version-li1 {
-    display: block;
   }
 
   .mobile-version-li2 {
@@ -911,6 +955,7 @@ button {
   ul.flex-icone {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
   }
 
   .languages-list ul li {
@@ -933,16 +978,18 @@ button {
     margin-right: 12px;
     line-height: 24px;
     margin-left: 4px;
+    margin-right: 20px;
   }
 
   .flex-container-list li:nth-child(2),
-  ul li.desktop-version-li1 {
+  ul li.desktop-version-li1  {
     list-style: disc;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #7a869a;
-    margin-right: 32px;
+    margin-right: -2px;
+    margin-left: 0px;
   }
 
   .flex-container-list li:nth-child(2) {
@@ -952,7 +999,7 @@ button {
     line-height: 24px;
     color: #7a869a;
     margin-right: -80px;
-    margin-left: 8px;
+    margin-left: 0px;
   }
 
   .flex-container-list li:last-child {
@@ -962,6 +1009,45 @@ button {
     line-height: 24px;
     color: #7a869a;
     margin-left: 110px;
+
+  }
+
+  .button-connect-about {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-decoration: none;
+  }
+
+  .btn-see-projects a {
+    display: block;
+    color: #396df2;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .btn-see-projects-about a {
+    display: block;
+    width: 162px;
+    height: 26px;
+    color: #396df2;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    text-decoration: none;
   }
 
   .btn-see-projects a:hover {
@@ -983,8 +1069,8 @@ button {
     grid-template-columns: 1fr 1fr;
     column-gap: 160px;
     background: #FFFFFF;
-    border-top-right-radius: 200px;
-    width: 1440px;
+    border-top-right-radius: 130px;
+    width: 1398px;
     height: 924px;;
     justify-items: start;
     justify-content: center;
@@ -1016,8 +1102,8 @@ button {
     position: absolute;
     width: 48px;
     height: 48px;
-    left: calc(50% - 48px / 2 - -95px);
-    top: 3507px;
+    left: calc(50% - 48px / 2 - -97px);
+    top: 3601px;
     border: 1px solid #FFFFFF;
   }
 
@@ -1026,7 +1112,7 @@ button {
     width: 48px;
     height: 48px;
     left: calc(50% - 48px / 2 - -254px);
-    top: 3507px;
+    top: 3601px;
     border: 1px solid #FFFFFF;
   }
 
@@ -1035,58 +1121,49 @@ button {
     width: 48px;
     height: 48px;
     left: calc(50% - 48px / 2 - -410px);
-    top: 3507px;
+    top: 3601px;
     border: 1px solid #FFFFFF;
   }
 
   span .label1 {
-    margin-top: 100px;
-    position: absolute;
+    display: block;
+    margin-top: 69px;
     width: 98px;
     height: 24px;
-    left: 797px;
-    top: 3467px;
+    margin-left: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
     color: #253858;
   }
 
   span .label2 {
-    margin-top: 100px;
-    position: absolute;
+    display: block;
+    margin-top: 69px;
     width: 98px;
     height: 24px;
-    left: 957px;
-    top: 3467px;
+    margin-left: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
     color: #253858;
   }
 
   span .label3 {
-    margin-top: 100px;
-    position: absolute;
+    display: block;
+    margin-top: 69px;
     width: 98px;
     height: 24px;
-    left: 1114px;
-    top: 3467px;
+    margin-left: 20px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
     color: #253858;
   }
 
@@ -1101,12 +1178,12 @@ button {
   }
 
   .contact-form {
-    width: 1420px;
+    width: 1378px;
     height: 846px;
     margin-top: -204px;
     background-color: #6070ff;
     padding: 80px 10px 10px;
-    border-top-left-radius: 200px;
+    border-top-left-radius: 130px;
     text-align: center;}
   }
 
@@ -1197,8 +1274,20 @@ button {
   }
 
   button {
+    width: 142px;
+    height: 48px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #6070ff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    background: #fff;
+    border-radius: 8px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
   }
 
   .nav-links {
