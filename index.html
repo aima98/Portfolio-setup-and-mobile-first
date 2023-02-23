@@ -208,77 +208,105 @@
                 </div>
             </div>
         </section>
-                                    <!-- Section 2 : About Myself -->
-    <section class="about-myself">
-        <img src="./images/Base about my self.png" alt="base" class="base">
-        <div class="about-container">
-            <h3 class="about-myself-title">About Myself</h3>
-            <p class="about-myself-resume">
-                Hello I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hesitate to contact me.
-            </p>
-            <h4 class="connect">LET'S CONNECT</h4>
-            <ul class="social-media">
-                <li>
-                  <a href="#"><img src="./images/social/Github.svg" alt="Github" /></a>
-                </li>
-                
-                <li>
-                  <a href="#"><img src="./images/social/Linkedin.svg" alt="Linkedln"/></a>
-                </li>
-                
-                <li><a href="#"><img src="./images/social/Hand2.svg" alt="" /></a></li>
-                
-                <li><a href="#"><img src="./images/social/Twitter.svg" alt="Twitter"/></a></li>
-                
-                <li><a href="#"><img src="./images/social/Vector-M.svg" alt="medium-icon" /></a></li>
+        <!-- Section 2 : About Myself -->
+        <section class="about">
+            <div class="grid-container-desktop-about">
+                <div class="title-about">
+                    <h1>About<br>Myself</h1>
+                </div>
 
-            </ul>
-            
-            <button type="button" onclick="" class="see-project">
-                Get my resume
-            </button>
-        </div>
-        <ul class="my-resume">
-            <li class="resume-title">Languages<img src="./images/arrow-icon.png" alt="Arrow Down" class="arrow1"/></li>
-            
-            <li class="prog-languages">
-                <p class="javascript"><img src="./images/js.png" alt="JavaScript"/></p>
-                <h4>JavaScript</h4>
-                <p class="html"><img src="./images/html.png" alt="HTML"/></p>
-                <h4>HTML</h4>
-                <p class="css"><img src="./images/ic-css.png" alt="CSS"/></p>
-                <h4>CSS</h4>    
-            </li>
+                <div class="paragraph-about">
+                    <p>Hello I’m a software developer! I can help you build a product , feature or website Look through
+                        some of my work and experience! If you like what you see and have a project you need coded,
+                        don’t hestiate to contact me.</p>
+                </div>
 
-            <li class="resume-title-border1">
-                Frameworks
-                <img src="./images/Arrow-Right.png" alt="Arrow forward" class="arrow"/>
-            </li>
-            <img src="./images/Separator1.png" alt="" class="separator1">
+                <div class="container-social-about">
+                    <a href="#" class="button-connect-about">LET’S CONNECT</a>
+                    <ul class="social-icons">
+                        <li><img src="/images/social/Twitter.svg" alt=""></li>
+                        <li><img src="/images/social/Linkedin.svg" alt=""></li>
+                        <li><img src="/images/social/Vector-M.svg" alt=""></li>
+                        <li><img src="/images/social/Github.svg" alt=""></li>
+                        <li><img src="/images/social/Hand2.svg" alt=""></li>
+                    </ul>
+                </div>
 
-            <li class="resume-title-border2">
-                Skills
-                <img src="./images/Arrow-Right.png" alt="Arrow forward" class="arrow"/>
-            </li>
-            <img src="./images/Separator1.png" alt="" class="separator2">
-        </ul>  
-    </section>
-                                        <!-- page 6 -->
-                                    <!-- Section 1 : Contact form -->
-    <section class="contact">
-        <img src="/images/contact form shapes-mobile@2x.png" alt="" class="contact-img2">
-        <h2>Contact Me</h2>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
-        <form action="https://formspree.io/f/xgebkapy" method="POST">
-            <input type="text" placeholder="Full name" name="full name" maxlength="30" required>
-            <input name="email"  placeholder="ex@example.com" type="email" class="user-email" required>
-            <textarea name="message" placeholder="  write your message here" required type="message" class="message" maxlength="500"></textarea>
-            <button class="submit-btn" type="submit">Get in touch</button>
-          </form>
-        <img src="/images/Shape.png" alt="" class="contact-img3">
-    </section>
+                <div class="btn-see-projects-about">
+                    <a href="#" class="button-about">Get my resume</a>
+                </div>
+            </div>
+
+            <div class="card-container-2">
+                <div class="languages-list-about">
+                    <ul>
+                        <li class="languages-list-names-about">
+                            <p>
+                                languages
+                                <img src="/images/arrow-icon.png" alt="row-icone" class="enabled-icon">
+                            </p>
+                            <ul class="flex-icone">
+                                <li class="container span-about">
+                                    <span class="icone-about">
+                                        <img src="/images/js.png" alt="js-icone" class="fav html">
+                                        <span class="label">JavaScript</span>
+                                    </span>
+                                </li>
+                                <li class="container span-about">
+                                    <span class="icone-about">
+                                        <img src="/images/html.png" alt="html-icone" class="fav html">
+                                        <span class="label">HTML</span>
+                                    </span>
+                                </li>
+                                <li class="container span-about">
+                                    <span class="icone-about">
+                                        <img src="/images/ic-css.png" alt="CSS-icone" class="fav css">
+                                        <span class="label">CSS</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="frameworks-about">
+                            <p class="frameworks">Frameworks</p>
+                            <img src="/images/Arrow-Right.png" alt="row-icone" class="row-icone">
+                        </li>
+
+                        <li class="skills-about">
+                            <p class="skills">Skills</p>
+                            <img src="/images/Arrow-Right.png" class="row-icone" alt="row-icone">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container desktop">
+            <div class="contact-content">
+                <h1 class="contact-me">Contact me</h1>
+                <p class="contact">
+                    If you have an application you are interested in developing,
+                    a feature that you need built or a project that needs coding.
+                    I’d love to help with it </p>
+            </div>
+            <form action="https://formspree.io/f/xqkjaqoe" method="post">
+                <div class="name-container">
+                    <input name="name" type="text" placeholder="your full name" maxlength="30" required>
+                </div>
+                <br>
+                <div class="mail-container">
+                    <input name="email" type="email" placeholder="natajayanj14@gmail.com" required>
+                </div>
+                <br>
+                <div class="textarea-container">
+                    <textarea name="message" maxlength="500" placeholder="Write your message here" required></textarea>
+                </div>
+                <br>
+                <button type="submit">Get in Touch</button>
+            </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
+    
