@@ -78,7 +78,7 @@ nav {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .hamburger-button {
@@ -119,7 +119,7 @@ section.intro {
   height: 718px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: #fff;
   padding-bottom: 10px;
   padding-top: 5px;
   border-bottom-left-radius: 100px;
@@ -127,7 +127,6 @@ section.intro {
 
 .container-global {
   background-image: url("/images/header-shapes-mobile.png");
-
 }
 
 .title.description {
@@ -684,6 +683,7 @@ button {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    text-decoration: none;
   }
 
   .logo {
@@ -698,15 +698,16 @@ button {
 
   .hamburger-button {
     display: none;
-  }  
-  
+  }
+
   .menu-bar {
     display: none;
   }
-  
+
   .menu-button {
     display: none;
   }
+
   .menu {
     display: none;
   }
@@ -766,6 +767,49 @@ button {
 
   .social.container {
     margin: 12px 287px;
+  }
+
+  .btn-see-projects-about a {
+    display: block;
+    width: 162px;
+    height: 26px;
+    color: #396df2;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .btn-see-projects a {
+    display: block;
+    color: #396df2;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .btn-see-projects a:hover {
+    background: #6070ff;
+    color: #fff;
+    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+    border-radius: 8px;
+  }
+
+  .btn-see-projects a:active {
+    background: #2230d2;
+    border-radius: 8px;
+    color: #ffff;
   }
 
   .social.container a {
@@ -906,8 +950,8 @@ button {
     font-size: 18px;
     line-height: 24px;
     color: #344563;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   h2.desktop-version-h22 {
@@ -920,7 +964,7 @@ button {
     font-size: 18px;
     line-height: 24px;
     color: #344563;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .mobile-version-li {
@@ -964,7 +1008,7 @@ button {
   }
 
   .flex-container-list {
-    padding: 0px;
+    padding: 0;
     gap: 12px;
     width: 343px;
     height: 40px;
@@ -975,21 +1019,20 @@ button {
     font-weight: 500;
     font-size: 18px;
     color: #344563;
-    margin-right: 12px;
     line-height: 24px;
     margin-left: 4px;
     margin-right: 20px;
   }
 
   .flex-container-list li:nth-child(2),
-  ul li.desktop-version-li1  {
+  ul li.desktop-version-li1 {
     list-style: disc;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #7a869a;
     margin-right: -2px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .flex-container-list li:nth-child(2) {
@@ -999,7 +1042,7 @@ button {
     line-height: 24px;
     color: #7a869a;
     margin-right: -80px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .flex-container-list li:last-child {
@@ -1009,7 +1052,6 @@ button {
     line-height: 24px;
     color: #7a869a;
     margin-left: 110px;
-
   }
 
   .button-connect-about {
@@ -1020,58 +1062,15 @@ button {
     text-decoration: none;
   }
 
-  .btn-see-projects a {
-    display: block;
-    color: #396df2;
-    padding: 12px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    text-decoration: none;
-  }
-
-  .btn-see-projects-about a {
-    display: block;
-    width: 162px;
-    height: 26px;
-    color: #396df2;
-    padding: 12px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    text-decoration: none;
-  }
-
-  .btn-see-projects a:hover {
-    background: #6070ff;
-    color: #fff;
-    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
-    border-radius: 8px;
-  }
-
-  .btn-see-projects a:active {
-    background: #2230d2;
-    border-radius: 8px;
-    color: #ffff;
-  }
-
   .about {
     display: grid;
     margin: 9px 24px;
     grid-template-columns: 1fr 1fr;
     column-gap: 160px;
-    background: #FFFFFF;
+    background: #fff;
     border-top-right-radius: 160px;
     width: 1398px;
-    height: 924px;;
+    height: 924px;
     justify-items: start;
     justify-content: center;
     align-items: center;
@@ -1104,7 +1103,7 @@ button {
     height: 48px;
     left: calc(50% - 48px / 2 - -97px);
     top: 3601px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
   }
 
   .fav-html {
@@ -1113,7 +1112,7 @@ button {
     height: 48px;
     left: calc(50% - 48px / 2 - -254px);
     top: 3601px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
   }
 
   .fav-css {
@@ -1122,7 +1121,7 @@ button {
     height: 48px;
     left: calc(50% - 48px / 2 - -410px);
     top: 3601px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
   }
 
   span .label1 {
@@ -1171,7 +1170,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
+    gap: 0;
     width: 1378px;
     height: 395px;
     margin-top: 124px;
@@ -1184,7 +1183,28 @@ button {
     background-color: #6070ff;
     padding: 80px 10px 10px;
     border-top-left-radius: 160px;
-    text-align: center;}
+    text-align: center;
+  }
+
+  button {
+    width: 142px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #6070ff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    background: #fff;
+    border-radius: 8px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+  }
+
+  .nav-links {
+    display: none;
   }
 
   .container-desktop {
@@ -1200,7 +1220,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 118px;
     width: 1365px;
     height: 200px;
@@ -1215,7 +1235,7 @@ button {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
     margin-top: 155px;
     margin-bottom: -99px;
   }
@@ -1271,38 +1291,5 @@ button {
     margin-top: 20px;
     height: 170px;
     padding-left: 5px;
-  }
-
-  button {
-    width: 142px;
-    height: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #6070ff;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    background: #fff;
-    border-radius: 8px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger-button {
-    display: none;
-  }
-
-  .menu-bar{
-    display: none;
-  }
-
-  .menu-button {
-    display: none;
   }
 }
