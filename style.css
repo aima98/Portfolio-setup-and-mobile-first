@@ -688,6 +688,12 @@ button {
     margin: 0 auto;
   }
 
+  .title {
+    width: auto;
+    height: auto;
+    margin: -40px 16px;
+  }
+
   h1.title {
     font-weight: 700;
     font-size: 48px;
@@ -785,12 +791,32 @@ button {
     color: #172b4d;
   }
 
+  .desktop-title1 {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .title.experience {
+    width: auto;
+    height: auto;
+    margin: 12px 16px;
+  }
+
   h1.mobile-title {
     display: none;
   }
 
   h1.desktop-title {
     display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    margin-top: -80px;
   }
 
   h2.mobile-version-h2 {
@@ -799,6 +825,14 @@ button {
 
   h2.desktop-version-h2 {
     display: block;
+    width: 106px;
+    height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
   }
 
   .mobile-version-li {
@@ -820,7 +854,7 @@ button {
   .paragraph {
     width: auto;
     height: auto;
-    margin: 24px;
+    margin: 17px;
   }
 
   p.mobile-para {
@@ -842,6 +876,14 @@ button {
   .languages-list ul li {
     list-style-type: none;
     padding-bottom: 10px;
+  }
+
+  .flex-container-list {
+    padding: 0px;
+    gap: 12px;
+    width: 343px;
+    height: 40px;
+    margin-top: 10px;
   }
 
   .flex-container-list li:first-child {
@@ -879,7 +921,7 @@ button {
     font-size: 18px;
     line-height: 24px;
     color: #7a869a;
-    margin-left: 100px;
+    margin-left: 110px;
   }
 
   .btn-see-projects a:hover {
