@@ -792,6 +792,14 @@ button {
   }
 
   .desktop-title1 {
+    margin-bottom: 52px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .desktop-title2 {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 40px;
@@ -937,6 +945,20 @@ button {
     color: #ffff;
   }
 
+  .about {
+    display: grid;
+    margin: 9px 24px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 160px;
+    background: #FFFFFF;
+    border-top-right-radius: 200px;
+    width: 1440px;
+    height: 773px;
+    justify-items: start;
+    justify-content: center;
+    align-items: center;
+  }
+
   .flex-lang li span {
     padding: 4px 12px;
     background: #ebebff;
@@ -956,6 +978,84 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 90px;
+  }
+
+  .fav-js {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: calc(50% - 48px / 2 - -95px);
+    top: 3507px;
+    border: 1px solid #FFFFFF;
+  }
+
+  .fav-html {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: calc(50% - 48px / 2 - -254px);
+    top: 3507px;
+    border: 1px solid #FFFFFF;
+  }
+
+  .fav-css {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: calc(50% - 48px / 2 - -410px);
+    top: 3507px;
+    border: 1px solid #FFFFFF;
+  }
+
+  span .label1 {
+    margin-top: 100px;
+    position: absolute;
+    width: 98px;
+    height: 24px;
+    left: 797px;
+    top: 3467px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #253858;
+  }
+
+  span .label2 {
+    margin-top: 100px;
+    position: absolute;
+    width: 98px;
+    height: 24px;
+    left: 957px;
+    top: 3467px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #253858;
+  }
+
+  span .label3 {
+    margin-top: 100px;
+    position: absolute;
+    width: 98px;
+    height: 24px;
+    left: 1114px;
+    top: 3467px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #253858;
   }
 
   form {
