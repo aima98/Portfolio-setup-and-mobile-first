@@ -55,30 +55,77 @@ a .links {
   display: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-}
-
 nav {
   display: none;
 }
 
+section .img-version-desktop {
+  display: none;
+}
+
+div .desktop-title {
+  display: none;
+}
+
+p .desktop-para {
+  display: none;
+}
+
+h1 .desktop-title {
+  display: none;
+}
+
+h1 .desktop-title1 {
+  display: none;
+}
+
+h2 .desktop-version-h2 {
+  display: none;
+}
+
+h1 .desktop-title2 {
+  display: none;
+}
+
+h2 .desktop-version-h22 {
+  display: none;
+}
+
+.desktop-version-li1 {
+  display: none;
+}
+
+.desktop-version-li2 {
+  display: none;
+}
+
+.desktop-version-span-container {
+  display: none;
+}
+
+header {
+  position: relative;
+  margin: -1rem;
+  width: 375px;
+  height: 92px;
+  left: 15px;
+  top: 28px;
+}
+
 .logo {
-  margin: 4px 199px 4px 12px;
+  display: flex;
   font-family: "Poppins", sans-serif;
-  width: 76px;
-  height: 20px;
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
   color: #6070ff;
+  position: relative;
+  width: 100px;
+  height: 78px;
+  left: 20px;
+  top: 9px;
 }
 
 .hamburger-button {
@@ -86,8 +133,8 @@ nav {
   cursor: pointer;
   width: 27px;
   height: 8px;
-  left: -30px;
-  top: 54px;
+  left: -20px;
+  top: 37px;
 }
 
 .menu-bar {
@@ -97,7 +144,7 @@ nav {
   height: 718px;
   left: 360px;
   left: 347px;
-  top: 2px;
+  top: -31px;
   background: #fff;
 }
 
@@ -116,13 +163,14 @@ nav {
 
 section.intro {
   width: 375px;
-  height: 718px;
-  background-size: cover;
+  height: 604px;
+  background-image: url("./images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #FFFFFF;
+  background-position-y: -15px;
   padding-bottom: 10px;
   padding-top: 5px;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 70px;
 }
 
 .container-global {
@@ -130,7 +178,7 @@ section.intro {
 }
 
 .title.description {
-  margin: 144px 24px 12px;
+  margin: 64px 27px 17px;
   width: auto;
   font-weight: 700;
   font-size: 40px;
@@ -139,7 +187,15 @@ section.intro {
 }
 
 h1.title {
-  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0px;
+  margin-bottom: 24px;
+  width: 327px;
+  height: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 p.description {
@@ -152,6 +208,19 @@ p.description {
 .social.container {
   margin: 12px 24px;
   height: auto;
+}
+
+.social.container a {
+  display: block;
+  width: 128px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+  text-decoration: none;
 }
 
 ul.social-icons {
@@ -687,7 +756,7 @@ button {
   }
 
   .logo {
-    margin: 16px 716px 16px 106px;
+    margin: 16px 716px -16px 106px;
     font-weight: 700;
     font-size: 22px;
     line-height: 20px;
