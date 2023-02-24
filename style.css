@@ -335,7 +335,7 @@ ul.social-icons li img {
   margin-right: 19.01px;
 }
 
-.work-container {
+.workcontainer {
   display: grid;
 }
 
@@ -1211,7 +1211,7 @@ button {
     text-decoration: none;
   }
 
-  .work-container {
+  .workcontainer {
     display: grid;
   }
 
