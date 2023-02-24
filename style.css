@@ -73,11 +73,11 @@ h1 .desktop-title {
   display: none;
 }
 
-h1 .desktop-title1 {
+div .desktop-title1 {
   display: none;
 }
 
-h2 .desktop-version-h2 {
+div .desktop-version-h2 {
   display: none;
 }
 
@@ -167,7 +167,7 @@ section.intro {
   background-position-y: -15px;
   padding-bottom: 10px;
   padding-top: 5px;
-  border-bottom-left-radius: 70px;
+  border-bottom-left-radius: 100px;
 }
 
 .container-global {
@@ -205,10 +205,19 @@ p.description {
 .btn-see-projects {
   width: auto;
   height: auto;
-  margin: 12px 16px;
+  margin: 36px 185px;
+  margin-left: 18px;
+}
+
+.btn-see-projects1 {
+  width: auto;
+  height: auto;
+  margin: 36px 185px;
+  margin-left: 18px;
 }
 
 .btn-see-projects a {
+  position: relative;
   color: #396df2;
   padding: 12px;
   font-style: normal;
@@ -221,6 +230,28 @@ p.description {
   letter-spacing: 0.03em;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  text-decoration: none;
+  top: -9px;
+  left: 8px;
+}
+
+.btn-see-projects1 a {
+  position: relative;
+  color: #396df2;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  text-decoration: none;
+  top: -31px;
+  left: 5px;
 }
 
 .button-connect-about {
@@ -228,6 +259,7 @@ p.description {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  text-decoration: none;
 }
 
 .btn-see-projects-about a {
@@ -240,11 +272,38 @@ p.description {
   padding: 12px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-see-projects a:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  border-radius: 8px;
+}
+
+.btn-see-projects1 a:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  border-radius: 8px;
+}
+
+.btn-see-projects a:active {
+  background: #2230d2;
+  border-radius: 8px;
+  color: #ffff;
+}
+
+.btn-see-projects1 a:active {
+  background: #2230d2;
+  border-radius: 8px;
+  color: #ffff;
 }
 
 div.btn-see-projects-about {
-  margin-left: 142px;
-  margin-top: 8px;
+  margin-left: 258px;
+  margin-top: -326px;
   margin-bottom: 12px;
 }
 
@@ -294,28 +353,79 @@ ul.social-icons li img {
   column-gap: 160px;
   background: #fff;
   margin-bottom: 12rem;
-  width: 1440px;
-  height: 773px;
+  width: 374px;
+  height: 960px;
   justify-items: start;
   justify-content: center;
   align-items: center;
-  padding: -29px;
   border-right: 16px;
+  border-top-right-radius: 100px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-left: 1px;
 }
 
 .grid-container-desktop-about {
-  width: 600px;
+  width: 374px;
   height: 392px;
   display: grid;
   grid-template-rows: 1fr 2fr 1fr 1fr;
   row-gap: 12px;
   align-items: center;
   justify-content: center;
+  margin-right: -200px;
+}
+
+div .desktop-title2 {
+  display: none;
+}
+
+div .desktop-version-h22 {
+  display: none;
+}
+
+div .mobile-title1 {
+  width: 295px;
+  height: 36px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-left: 3px;
+  margin-top: -24px;
+}
+
+div .mobile-title {
+  width: 295px;
+  height: 36px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-left: 4px;
+}
+
+div .mobile-version-h2 {
+  width: 55px;
+  height: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  margin-left: 4px;
 }
 
 .title-about {
-  margin-left: 142px;
+  position: relative;
+  margin-left: 262px;
   margin-bottom: 12px;
+  top: -209px;
 }
 
 .title-about h1 {
@@ -328,22 +438,26 @@ ul.social-icons li img {
 
 .paragraph-about {
   margin-left: 142px;
-  width: 100%;
+  width: 331px;
 }
 
 .paragraph-about p {
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  top: -209px;
+  left: 122px;
 }
 
 .container-social-about {
+  position: relative;
   height: auto;
   width: 200px;
   margin-right: 142px;
-  margin-top: 5px;
-  margin-left: 142px;
+  top: -190px;
+  left: 264px;
 }
 
 .card-container-2.works.languages-list-about {
@@ -368,12 +482,14 @@ ul.social-icons li img {
 }
 
 .languages-list-names-about p {
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  align-items: center;
   color: #344563;
+  top: 45px;
+  left: 80px;
 }
 
 .frameworks-about,
@@ -425,22 +541,74 @@ ul.social-icons li img {
 }
 
 .span-about {
-  height: 100px;
-  width: 122px;
+  position: relative;
+  top: 52px;
+  left: 96px;
+  height: 62px;
+  width: 306px;
   margin-right: 33px;
   background: #f7f7f9;
   border-radius: 8px;
 }
 
+span .label1 {
+  display: block;
+  margin-top: 59px;
+  width: 98px;
+  height: 24px;
+  margin-left: 11px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+span .label2 {
+  display: block;
+  margin-top: 59px;
+  width: 98px;
+  height: 24px;
+  margin-left: 23px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+span .label3 {
+  display: block;
+  margin-top: 59px;
+  width: 98px;
+  height: 24px;
+  margin-left: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
 div.card-container-2 {
-  height: 360px;
-  width: 684px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 427px;
+  height: 764.15px;
+  left: -254px;
+  top: 350px;
 }
 
 .card-container-1 {
   width: auto;
   height: auto;
-  margin: 12px 16px;
+  margin: 5px 16px;
 }
 
 img.img-version-desktop {
@@ -450,7 +618,7 @@ img.img-version-desktop {
 .title {
   width: auto;
   height: auto;
-  margin: 12px 16px;
+  margin: 22px 16px;
 }
 
 .about h1 {
@@ -470,7 +638,7 @@ h1.desktop-title {
 }
 
 .experience h1 {
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -482,8 +650,19 @@ p.desktop-para {
 }
 
 .flex-container-list {
+  position: relative;
   display: flex;
   align-items: center;
+  top: -27px;
+  left: 9px;
+}
+
+.flex-container-list1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 32px;
+  left: 5px;
 }
 
 .flex-container-list li:first-child {
@@ -512,15 +691,51 @@ p.desktop-para {
 }
 
 .paragraph {
+  position: relative;
   width: auto;
   height: auto;
   margin: 12px 16px;
+  top: 10px;
+}
+
+div .mobile-para {
+  position: relative;
+  width: 295px;
+  height: 76px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  top: -29px;
+  left: 12px;
+}
+
+div .mobile-para2 {
+  position: relative;
+  width: 295px;
+  height: 76px;
+  left: 9px;
+  top: 26px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .languages {
   width: auto;
   height: auto;
-  margin: 12px 16px;
+  margin: -3px 29px;
+}
+
+.languages1 {
+  width: auto;
+  height: auto;
+  margin: 55px 25px;
 }
 
 .flex-lang {
@@ -868,7 +1083,28 @@ button {
     text-decoration: none;
   }
 
+  .btn-see-projects1 a {
+    display: block;
+    color: #396df2;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
   .btn-see-projects a:hover {
+    background: #6070ff;
+    color: #fff;
+    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+    border-radius: 8px;
+  }
+
+  .btn-see-projects1 a:hover {
     background: #6070ff;
     color: #fff;
     box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
@@ -879,6 +1115,18 @@ button {
     background: #2230d2;
     border-radius: 8px;
     color: #ffff;
+  }
+
+  .btn-see-projects1 a:active {
+    background: #2230d2;
+    border-radius: 8px;
+    color: #ffff;
+  }
+
+  .about h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .social.container a {
@@ -913,6 +1161,26 @@ button {
   .grid-container-desktop {
     margin: 24px 22px 27px;
     padding: 24px;
+  }
+
+  .title-about h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .languages {
+    width: auto;
+    height: auto;
+    margin: 12px 16px;
+  }
+
+  .languages1 {
+    width: auto;
+    height: auto;
+    margin: 12px 16px;
   }
 
   .grid-container-desktop.order {
@@ -959,6 +1227,27 @@ button {
     margin-top: -142px;
   }
 
+  div.btn-see-projects-about {
+    margin-left: 141px;
+    margin-top: 19px;
+    margin-bottom: 12px;
+  }
+
+  .paragraph-about {
+    margin-left: 142px;
+    width: 100%;
+  }
+
+  .paragraph-about p {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    top: -10px;
+    left: 1px;
+  }
+
   .desktop-title {
     margin-bottom: 12px;
     font-weight: 700;
@@ -981,6 +1270,7 @@ button {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
+    margin-top: 23px;
   }
 
   .title.experience {
@@ -1000,17 +1290,17 @@ button {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    margin-top: -87px;
+    margin-top: -33px;
   }
 
   h1.desktop-title1 {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 29px;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    margin-top: -18px;
+    margin-top: 41px;
   }
 
   h2.mobile-version-h2 {
@@ -1153,6 +1443,13 @@ button {
     align-items: center;
   }
 
+  .title-about {
+    position: relative;
+    margin-left: 142px;
+    margin-bottom: 12px;
+    top: -2px;
+  }
+
   .flex-lang li span {
     padding: 4px 12px;
     background: #ebebff;
@@ -1166,6 +1463,15 @@ button {
     line-height: 16px;
   }
 
+  .container-social-about {
+    position: relative;
+    height: auto;
+    width: 200px;
+    margin-right: 142px;
+    top: -6px;
+    left: 144px;
+  }
+
   .container.desktop {
     height: 577px;
     width: 801px;
@@ -1174,12 +1480,52 @@ button {
     margin-bottom: 90px;
   }
 
+  .languages-list-about {
+    width: auto;
+    height: auto;
+    margin: -106px 24px 114px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .languages-list-names-about {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+  }
+
+  .languages-list-names-about p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    color: #344563;
+  }
+
+  .frameworks-about,
+  .skills-about {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f7f9;
+  }
+
+  .flex-lang li {
+    margin-right: 8px;
+  }
+
+  .languages-list-about ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
+
   .fav-js {
     position: absolute;
     width: 48px;
     height: 48px;
-    left: calc(50% - 48px / 2 - -97px);
-    top: 3601px;
+    left: calc(50% - 48px / 2 - 198px);
+    top: -31px;
     border: 1px solid #fff;
   }
 
@@ -1187,8 +1533,8 @@ button {
     position: absolute;
     width: 48px;
     height: 48px;
-    left: calc(50% - 48px / 2 - -254px);
-    top: 3601px;
+    left: calc(50% - 48px / 2 - 41px);
+    top: -31px;
     border: 1px solid #fff;
   }
 
@@ -1196,9 +1542,42 @@ button {
     position: absolute;
     width: 48px;
     height: 48px;
-    left: calc(50% - 48px / 2 - -410px);
-    top: 3601px;
+    left: calc(50% - 48px / 2 - -116px);
+    top: -31px;
     border: 1px solid #fff;
+  }
+
+  .skills p {
+    width: 237px;
+    margin-right: 12px;
+  }
+
+  .frameworks p {
+    width: 237px;
+    margin-right: 12px;
+  }
+
+  .contact-content p {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    color: #ebebff;
+    height: 136px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .languages-list-about li p {
+    margin: 10px 0;
+  }
+
+  .span-about {
+    height: 100px;
+    width: 122px;
+    margin-right: 33px;
+    background: #f7f7f9;
+    border-radius: 8px;
   }
 
   span .label1 {
@@ -1254,8 +1633,8 @@ button {
   }
 
   .contact-form {
-    width: 1382px;
-    height: -204px;
+    width: 1385px;
+    height: 780px;
     margin-top: -204px;
     background-color: #6070ff;
     padding: 80px 10px 10px;
