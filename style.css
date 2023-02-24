@@ -126,9 +126,10 @@ header {
   height: 78px;
   left: 20px;
   top: 9px;
+  animation: rotate 1s;
 }
 
-@keyframes animation {
+@keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
