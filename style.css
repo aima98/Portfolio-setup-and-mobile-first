@@ -1,7 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap";
 
 /* HTML5 Reset Stylesheets. */
-html,
 body,
 div,
 span,
@@ -20,13 +19,12 @@ nav,
 section,
 summary,
 main {
-  margin: 0;
+  margin: -1px;
   padding: 0;
   border: 0;
   outline: 0;
   font-family: "Poppins", sans-serif;
   vertical-align: baseline;
-  background: transparent;
 }
 
 body {
@@ -728,7 +726,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px -100px 9px 9px;
+    margin: 9px -140px 9px 9px;
+    background-color: #fff;
     align-items: center;
     width: auto;
   }
@@ -736,28 +735,34 @@ button {
   nav {
     display: flex;
     width: auto;
-    margin-right: -25rem;
+    margin-right: 10rem;
+    margin-top: -63px;
   }
 
   nav a.links {
-    font-family: "Poppins", sans-serif;
+    display: block;
     margin-right: 35px;
     padding: 10px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
   }
 
   .logo {
-    margin: 16px 716px -16px 106px;
+    display: block;
+    margin: -98px 771px -16px 129px;
     font-weight: 700;
     font-size: 22px;
     line-height: 20px;
     color: #6070ff;
     position: relative;
     text-decoration: none;
+    width: 76px;
+    height: 20px;
+    font-family: "Poppins", sans-serif;
   }
 
   .hamburger-button {
@@ -794,8 +799,8 @@ button {
     background-repeat: no-repeat;
     background-position-y: -20px;
     background-position-x: -20px;
-    border-bottom-left-radius: 160px;
-    width: 1440px;
+    border-bottom-left-radius: 180px;
+    width: 1402px;
   }
 
   div.container-global {
@@ -819,7 +824,7 @@ button {
     line-height: 60px;
     letter-spacing: 0.37px;
     color: #091e42;
-    margin: 289px 260px 12px;
+    margin: 233px 259px 61px;
   }
 
   p.description {
@@ -897,8 +902,8 @@ button {
   section.works.card-3,
   section.works.card-4,
   section.about {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 100px;
+    margin-bottom: 14px;
   }
 
   .card-container-1 {
@@ -936,7 +941,7 @@ button {
 
   div.card-container-2 {
     width: 684px;
-    height: 360px;
+    height: 520px;
   }
 
   div.grid-container-desktop {
@@ -944,6 +949,14 @@ button {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  div.grid-container-desktop-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: -142px;
   }
 
   .desktop-title {
@@ -1132,9 +1145,9 @@ button {
     grid-template-columns: 1fr 1fr;
     column-gap: 160px;
     background: #fff;
-    border-top-right-radius: 160px;
-    width: 1398px;
-    height: 924px;
+    border-top-right-radius: 180px;
+    width: 1402px;
+    height: 800px;
     justify-items: start;
     justify-content: center;
     align-items: center;
@@ -1190,10 +1203,10 @@ button {
 
   span .label1 {
     display: block;
-    margin-top: 69px;
+    margin-top: 59px;
     width: 98px;
     height: 24px;
-    margin-left: 20px;
+    margin-left: 11px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1204,10 +1217,10 @@ button {
 
   span .label2 {
     display: block;
-    margin-top: 69px;
+    margin-top: 59px;
     width: 98px;
     height: 24px;
-    margin-left: 20px;
+    margin-left: 23px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1218,10 +1231,10 @@ button {
 
   span .label3 {
     display: block;
-    margin-top: 69px;
+    margin-top: 59px;
     width: 98px;
     height: 24px;
-    margin-left: 20px;
+    margin-left: 25px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1241,8 +1254,8 @@ button {
   }
 
   .contact-form {
-    width: 1378px;
-    height: 846px;
+    width: 1382px;
+    height: -204px;
     margin-top: -204px;
     background-color: #6070ff;
     padding: 80px 10px 10px;
