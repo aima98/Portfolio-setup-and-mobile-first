@@ -335,6 +335,10 @@ ul.social-icons li img {
   margin-right: 19.01px;
 }
 
+.work-container {
+  display: grid;
+}
+
 .works {
   display: grid;
   background: #fff;
@@ -1205,6 +1209,10 @@ button {
     line-height: 24px;
     color: #7f8cff;
     text-decoration: none;
+  }
+
+  .work-container {
+    display: grid;
   }
 
   section.works {
