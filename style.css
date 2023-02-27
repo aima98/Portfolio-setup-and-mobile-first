@@ -180,7 +180,7 @@ main {
   section.intro {
     width: 375px;
     height: 604px;
-    background-image: url("./images/header-shapes\ mobile.png");
+    background-image: url("assets/images/header-shapes\ mobile.png");
     background-repeat: no-repeat;
     background-color: #fff;
     background-position-y: -15px;
@@ -190,7 +190,7 @@ main {
   }
 
   .container-global {
-    background-image: url("/images/header-shapes-mobile.png");
+    background-image: url("assets/images/header-shapes-mobile.png");
   }
 
   .title.description {
@@ -916,7 +916,7 @@ main {
   section .container-desktop {
     width: 373px;
     height: 770.17px;
-    background-image: url(./images/shapes.png);
+    background-image: url("assets/images/shapes.png");
     background-repeat: no-repeat;
     background-position-x: 145px;
     background-position-y: 30px;
@@ -1119,7 +1119,7 @@ main {
 
   div.container-global {
     display: block;
-    background-image: url(/images/Header\ bg.png);
+    background-image: url("assets/images/Header\ bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 2px;
@@ -1841,7 +1841,7 @@ main {
   }
 
   .container-desktop {
-    background-image: url("./images/contact\ form\ background\ shapes.png");
+    background-image: url("assets/images/contact\ form\ background\ shapes.png");
     background-repeat: no-repeat;
     background-position-x: 64px;
     background-position-y: 52px;
@@ -1852,7 +1852,7 @@ main {
   section .container-desktop {
     width: 98%;
     height: 871.7px;
-    background-image: url(./images/contact\ form\ background\ shapes.png);
+    background-image: url(aasets/images/contact\ form\ background\ shapes.png);
     background-repeat: no-repeat;
     background-position-x: 146px;
     background-position-y: 39px;
