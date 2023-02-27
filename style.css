@@ -1852,7 +1852,7 @@ main {
   section .container-desktop {
     width: 98%;
     height: 871.7px;
-    background-image: url(aasets/images/contact\ form\ background\ shapes.png);
+    background-image: url("assets/images/contact\ form\ background\ shapes.png");
     background-repeat: no-repeat;
     background-position-x: 146px;
     background-position-y: 39px;
