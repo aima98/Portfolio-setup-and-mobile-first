@@ -42,6 +42,52 @@ main {
 }
 
 @media only screen and (min-width: 342px) {
+  .close-btn li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .close-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+  }
+
+  .close-btn li a:hover {
+    box-shadow: 0 3px 0 white;
+  }
+
+  .close-icon {
+    cursor: pointer;
+  }
+
+  .menu-close-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em 2em;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    width: 100vw;
+    display: none;
+  }
+
+  .Menu {
+    display: none;
+    position: fixed;
+    background: #6070ff;
+    height: 120%;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    mix-blend-mode: multiply;
+  }
+
   li {
     list-style: none;
   }
