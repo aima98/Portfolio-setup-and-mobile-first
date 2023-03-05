@@ -1860,7 +1860,7 @@ main {
     margin-bottom: -79px;
     left: 580px;
   }
-  
+
   span .label1 {
     display: block;
     margin-top: 59px;
@@ -1874,7 +1874,7 @@ main {
     line-height: 20px;
     color: #253858;
   }
-  
+
   span .label2 {
     display: block;
     margin-top: 59px;
@@ -1888,7 +1888,7 @@ main {
     line-height: 20px;
     color: #253858;
   }
-  
+
   span .label3 {
     display: block;
     margin-top: 59px;
@@ -1902,7 +1902,7 @@ main {
     line-height: 20px;
     color: #253858;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
@@ -1912,7 +1912,7 @@ main {
     height: 395px;
     margin-top: 124px;
   }
-  
+
   .contact-form {
     width: 100%;
     height: 800px;
@@ -1922,7 +1922,7 @@ main {
     border-top-left-radius: 160px;
     text-align: center;
   }
-  
+
   button {
     width: 163px;
     height: 48px;
@@ -1939,11 +1939,11 @@ main {
     letter-spacing: 0.03em;
     margin-bottom: -38px;
   }
-  
+
   .nav-links {
     display: none;
   }
-  
+
   .contact-content {
     display: flex;
     flex-direction: column;
@@ -1953,7 +1953,7 @@ main {
     width: 1365px;
     height: 200px;
   }
-  
+
   .name-container input {
     font-family: Poppins, sans-serif;
     border: 1px solid transparent;
@@ -1967,7 +1967,7 @@ main {
     height: 48px;
     padding-left: 5px;
   }
-  
+
   .enabled-icon {
     color: #acb7c3;
     opacity: 0.5;
@@ -1976,7 +1976,7 @@ main {
     right: 12px;
     top: 1px;
   }
-  
+
   .mail-container input {
     font-family: Poppins, sans-serif;
     border: 1px solid transparent;
@@ -1990,7 +1990,7 @@ main {
     height: 48px;
     padding-left: 5px;
   }
-  
+
   .textarea-container textarea {
     font-family: Poppins, sans-serif;
     border: 1px solid transparent;
@@ -2004,7 +2004,6 @@ main {
     height: 170px;
     padding-left: 5px;
   }
-  
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2872,7 +2871,7 @@ main {
     margin-bottom: -79px;
     left: 466px;
   }
-  
+
   span .label1 {
     display: block;
     margin-top: 59px;
@@ -2886,7 +2885,7 @@ main {
     line-height: 20px;
     color: #253858;
   }
-  
+
   span .label2 {
     display: block;
     margin-top: 59px;
@@ -2900,7 +2899,7 @@ main {
     line-height: 20px;
     color: #253858;
   }
-  
+
   span .label3 {
     display: block;
     margin-top: 59px;
@@ -2914,7 +2913,7 @@ main {
     line-height: 20px;
     color: #253858;
   }
-  
+
   form {
     display: flex;
     flex-direction: column;
@@ -2924,7 +2923,7 @@ main {
     height: 395px;
     margin-top: 124px;
   }
-  
+
   .contact-form {
     width: 100%;
     height: 800px;
@@ -2934,7 +2933,7 @@ main {
     border-top-left-radius: 160px;
     text-align: center;
   }
-  
+
   button {
     width: 163px;
     height: 48px;
@@ -2951,11 +2950,11 @@ main {
     letter-spacing: 0.03em;
     margin-bottom: -38px;
   }
-  
+
   .nav-links {
     display: none;
   }
-  
+
   .contact-content {
     display: flex;
     flex-direction: column;
@@ -2965,7 +2964,7 @@ main {
     width: 1365px;
     height: 200px;
   }
-  
+
   .name-container input {
     font-family: Poppins, sans-serif;
     border: 1px solid transparent;
@@ -2979,7 +2978,7 @@ main {
     height: 48px;
     padding-left: 5px;
   }
-  
+
   .enabled-icon {
     color: #acb7c3;
     opacity: 0.5;
@@ -2988,7 +2987,7 @@ main {
     right: 12px;
     top: 1px;
   }
-  
+
   .mail-container input {
     font-family: Poppins, sans-serif;
     border: 1px solid transparent;
@@ -3002,7 +3001,7 @@ main {
     height: 48px;
     padding-left: 5px;
   }
-  
+
   .textarea-container textarea {
     font-family: Poppins, sans-serif;
     border: 1px solid transparent;
@@ -3017,4 +3016,3 @@ main {
     padding-left: 5px;
   }
 }
-
