@@ -105,17 +105,29 @@ main {
   body {
     width: 100%;
     display: block;
-    margin-left: 59px;
+    position: absolute;
+    margin-left: -32px;
     overflow-x: hidden;
   }
 
   .wrapper {
-    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background: #e5e5e5;
+    height: auto;
+    width: 100%;
+    margin-left: 32px;
+    align-content: center;
+    flex-wrap: wrap;
+    /* position: relative;
     display: block;
     background: #e5e5e5;
     height: auto;
     width: 374px;
-    margin-left: 143px;
+    margin-left: 143px; */
   }
 
   header {
@@ -281,7 +293,7 @@ main {
 
   .mobile-menu {
     position: fixed;
-    width: 375px;
+    width: 376px;
     height: 745px;
     background-color: #6070ff;
     text-align: left;
@@ -289,11 +301,11 @@ main {
     mix-blend-mode: multiply;
     opacity: 1;
     backdrop-filter: blur(7px);
-    left: -100%;
+    left: -111%;
   }
 
   .mobile-menu.active {
-    left: 202px;
+    left: 1px;
     position: fixed;
   }
 
@@ -461,7 +473,7 @@ main {
     border-top-right-radius: 80px;
     padding-bottom: 10px;
     padding-top: 5px;
-    margin-left: 1px;
+    margin-left: 23px;
   }
 
   .grid-container-desktop-about {
