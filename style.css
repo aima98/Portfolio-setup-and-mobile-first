@@ -311,6 +311,7 @@ main {
   .menu-bar.active {
     opacity: 0;
   }
+
   .close-icon {
     position: absolute;
     cursor: pointer;
@@ -322,7 +323,7 @@ main {
   }
 
   .close-icon :hover {
- background: #fff;
+    background: #fff;
     color: #fff;
     box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
     border-radius: 8px;
@@ -345,6 +346,30 @@ main {
     display: flex;
     align-items: center;
   }
+
+  .menu-item3 {
+    position: fixed;
+    height: 40px;
+    left: 29px;
+    top: 285px;
+    display: flex;
+    align-items: center;
+  }
+
+  .close-menu li a {
+    position: fixed;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    width: 351px;
+    height: 184px;
+    color: #fff;
+  }
+
   .btn-see-projects a:hover {
     background: #6070ff;
     color: #fff;
