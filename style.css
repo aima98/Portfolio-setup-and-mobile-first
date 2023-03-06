@@ -103,7 +103,7 @@ main {
   }
 
   body {
-    width: 100%;
+    width: 100vw;
     display: block;
     margin-left: 59px;
     overflow-x: hidden;
