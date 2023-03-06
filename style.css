@@ -42,52 +42,6 @@ main {
 }
 
 @media only screen and (min-width: 342px) {
-  .close-btn li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 32px;
-    font-weight: 500;
-  }
-
-  .close-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    list-style: none;
-  }
-
-  .close-btn li a:hover {
-    box-shadow: 0 3px 0 white;
-  }
-
-  .close-icon {
-    cursor: pointer;
-  }
-
-  .menu-close-btn {
-    display: flex;
-    justify-content: flex-end;
-    padding: 2em 2em;
-  }
-
-  .mobile-menu {
-    position: fixed;
-    width: 100vw;
-    display: none;
-  }
-
-  .Menu {
-    display: none;
-    position: fixed;
-    background: #6070ff;
-    height: 120%;
-    width: 100%;
-    border-radius: 15px;
-    opacity: 1;
-    backdrop-filter: blur(10px);
-    mix-blend-mode: multiply;
-  }
-
   li {
     list-style: none;
   }
@@ -201,19 +155,6 @@ main {
     height: 8px;
     left: -20px;
     top: 37px;
-  }
-
-  .menu-bar {
-    position: absolute;
-    width: 27px;
-    height: 718px;
-    left: 340px;
-    top: -31px;
-    align-self: flex-end;
-    border: 0;
-    outline: 0;
-    font-family: "Poppins", sans-serif;
-    vertical-align: baseline;
   }
 
   .menu-button {
@@ -336,6 +277,39 @@ main {
     border: 1px solid #6070ff;
     border-radius: 8px;
     text-decoration: none;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    width: 375px;
+    height: 745px;
+    background-color: #6070ff;
+    text-align: left;
+    transition: 0.3s;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    left: -100%;
+  }
+
+  .mobile-menu.active {
+    left: 202px;
+    position: fixed;
+  }
+
+  .menu-bar {
+    position: absolute;
+    width: 27px;
+    height: 718px;
+    left: 340px;
+    top: -31px;
+    align-self: flex-end;
+    border: 0;
+    outline: 0;
+  }
+
+  .menu-bar.active {
+    opacity: 0;
   }
 
   .btn-see-projects a:hover {
