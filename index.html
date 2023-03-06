@@ -13,10 +13,20 @@
     <!-- page 1 -->
     <main class="wrapper">
         <header>
+            <div class="mobile-menu" id="menu-overlay">
+                <ul class="close-menu">
+                    <li class="menu-item1"><a class="menu-link" href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item2"><a class="menu-link" href="#about">About</a></li>
+                    <li class="menu-item3"><a class="menu-link" href="#contact">Contact</a></li>
+                </ul>
+                <img src="./assets/images/close-icon-mobile.png" alt="close menu" class="close-icon">
+            </div>
+            
             <a class="logo" href="#">AIMA NJ</a>
+
             <ul class="menu-bar">
                 <li class="hamburger-button">
-                    <img src=".assets/images/icon-Menu.svg" alt="Menu button" class="menu-button" id="hamburger"/>
+                    <img src=".\assets\images\Icon - Menu.png" alt="Menu button" class="menu-button" id="hamburger"/>
                 </li>
             </ul>
             
@@ -30,7 +40,8 @@
         <section class="intro">
 
             <div class="container-global">
-                <div class="title description">
+
+                <div class="title description">  
                     <h1 class="title">I’m Aima<br>
                         Glad to see<br>you!</h1>
                     <p class="description">I’m a software developer! I can help you build a product , feature or website
@@ -51,7 +62,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="portfolio">
             <section class="works card-1">
                 <div class="card-container-1">
                     <img class="img-version-mobile" src="assets/images/Snapshoot1.png" alt="Snapshot Portfolio Image">
@@ -213,7 +224,7 @@
             </section>
         </section>
         <!-- Section 2 : About Myself -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="grid-container-desktop-about">
                 <div class="title-about">
                     <h1>About<br>Myself</h1>
@@ -280,7 +291,7 @@
             </div>
         </section>
 
-        <section class="contact-form">
+        <section class="contact-form" id="contact">
             <div class="container-desktop">
                 <div class="contact-content">
                     <h1 class="contact-me">Contact me</h1>
@@ -307,5 +318,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>    
