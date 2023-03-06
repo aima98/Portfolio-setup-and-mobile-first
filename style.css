@@ -137,7 +137,7 @@ main {
   }
 
   .logo {
-    position: fixed;
+    position: relative;
     display: flex;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -146,7 +146,6 @@ main {
     font-weight: 700;
     font-style: normal;
     color: #6070ff;
-    position: relative;
     width: 100px;
     height: 78px;
     left: 37px;
