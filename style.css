@@ -311,7 +311,40 @@ main {
   .menu-bar.active {
     opacity: 0;
   }
+  .close-icon {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 327px;
+    top: 11px;
+  }
 
+  .close-icon :hover {
+ background: #fff;
+    color: #fff;
+    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+    border-radius: 8px;
+  }
+
+  .menu-item1 {
+    position: fixed;
+    height: 24px;
+    left: 31px;
+    top: 163px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item2 {
+    position: fixed;
+    height: 40px;
+    left: 29px;
+    top: 220px;
+    display: flex;
+    align-items: center;
+  }
   .btn-see-projects a:hover {
     background: #6070ff;
     color: #fff;
