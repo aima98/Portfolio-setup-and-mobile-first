@@ -333,7 +333,7 @@ main {
     position: fixed;
     height: 24px;
     left: 31px;
-    top: 163px;
+    top: 87px;
     display: flex;
     align-items: center;
   }
@@ -342,7 +342,7 @@ main {
     position: fixed;
     height: 40px;
     left: 29px;
-    top: 220px;
+    top: 136px;
     display: flex;
     align-items: center;
   }
@@ -351,7 +351,7 @@ main {
     position: fixed;
     height: 40px;
     left: 29px;
-    top: 285px;
+    top: 196px;
     display: flex;
     align-items: center;
   }
@@ -365,8 +365,8 @@ main {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    width: 351px;
-    height: 184px;
+    width: 60px;
+    height: 40px;
     color: #fff;
   }
 
