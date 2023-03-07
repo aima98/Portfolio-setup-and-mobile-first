@@ -524,6 +524,46 @@ main {
   }
 
 
+  .card-lang1 {
+    width: 29px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+  }
+
+  .card-lang2 {
+    width: 21px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+  }
+
+  .card-lang3 {
+    width: 65px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+  }
+
+  .card-lang4, .card-lang5, 
+  .card-lang6 {
+    display: none;
+  }
 
   .see-ptojects-btn {
     border: 1px solid #6070ff;
