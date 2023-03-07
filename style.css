@@ -523,7 +523,6 @@ main {
     color: #172b4d;
   }
 
-
   .card-lang1 {
     width: 29px;
     height: 16px;
@@ -533,7 +532,7 @@ main {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #6070ff;
   }
 
   .card-lang2 {
@@ -545,7 +544,7 @@ main {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #6070ff;
   }
 
   .card-lang3 {
@@ -557,10 +556,11 @@ main {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #6070ff;
   }
 
-  .card-lang4, .card-lang5, 
+  .card-lang4,
+  .card-lang5,
   .card-lang6 {
     display: none;
   }
@@ -1204,6 +1204,8 @@ main {
     text-align: center;
     letter-spacing: 0.03em;
   }
+
+  /* ------------- Popup Window ------------- */
 }
 
 @media only screen and (min-width: 768px) {
