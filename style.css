@@ -437,21 +437,111 @@ main {
     margin-right: 19.01px;
   }
 
-  .workcontainer {
-    display: grid;
+  .desktop {
+    display: none;
   }
 
+  .mobile {
+    display: block;
+  }
+
+  /* ------------- Works Section ------------- */
   .works {
     display: grid;
-    background: #fff;
-    width: 327px;
-    height: 552px;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    align-items: center;
-    margin: 40px 24px;
+    grid-template-rows: auto auto auto auto;
+    gap: 80px;
+    border-radius: 15px;
   }
 
+  .works > div {
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: #fff;
+    margin: 1.2em;
+    width: 90%;
+  }
+
+  .card {
+    width: 327px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  .card-bg {
+    background-size: 100%;
+    flex-basis: 12em;
+    width: 90%;
+    border-radius: 6px;
+  }
+
+  .card1 {
+    background-image: url(./assets/images/Snapshoot1.png);
+  }
+
+  .card2 {
+    background-image: url(./assets/images/Snapshoot2.png);
+  }
+
+  .card3 {
+    background-image: url(./assets/images/Snapshoot3.png);
+  }
+
+  .card4 {
+    background-image: url(./assets/images/Snapshoot4.png);
+  }
+
+  .card-projects {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 0.4em;
+  }
+
+  .card-title {
+    width: 295px;
+    height: 36px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .card-title2 {
+    width: 295px;
+    height: 80px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+
+
+  .see-ptojects-btn {
+    border: 1px solid #6070ff;
+    padding: 0 10px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 16px;
+    color: #396df2;
+    background: transparent;
+    height: 50px;
+    width: 120px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    display: flex;
+    margin: 0.5em;
+  }
+
+  /* ------------- About Section ------------- */
   .about {
     display: grid;
     margin: 9px 24px;

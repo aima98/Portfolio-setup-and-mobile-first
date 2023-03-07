@@ -107,5 +107,57 @@ data.forEach((element) => {
   const paragraph = document.createElement('p');
   paragraph.classList.add('card-text');
 
-}
-)
+  const ph = document.createTextNode(element.text);
+  cardContainer.appendChild(paragraph);
+  paragraph.appendChild(ph);
+
+  const languages = document.createElement('ul');
+  languages.classList.add('card-lang');
+
+  let html; let css; let js; let github; let ruby; let bootstrap;
+
+  for(let i=0; i<Object.keys(element.languages).length; i++){
+    html = document.createElement('li');
+    css = document.createElement('li');
+    js = document.createElement('li');
+  }
+
+  cardContainer.appendChild(languages);
+  languages.appendChild(html);
+  languages.appendChild(css);
+  languages.appendChild(js);
+
+  html.appendChild(document.createTextNode(element.languages[0]));
+  css.appendChild(document.createTextNode(element.languages[1]));
+  js.appendChild(document.createTextNode(element.languages[2]));
+
+  if(element.languages[3] != null && element.languages[4] != null && element.languages[5] != null){
+    github = document.createElement('li');
+    ruby = document.createElement('li');
+    bootstrap = document.createElement('li');
+
+    languages.appendChild(github);
+    languages.appendChild(ruby);
+    languages.appendChild(bootstrap);
+
+    github.appendChild(document.createTextNode(element.languages[3]));
+    ruby.appendChild(document.createTextNode(element.languages[4]));
+    bootstrap.appendChild(document.createTextNode(element.languages[5]));
+
+    github.classList.add('card-lang4');
+    ruby.classList.add('card-lang5');
+    bootstrap.classList.add('card-lang6');
+  }
+
+  html.classList.add('card-lang1');
+  css.classList.add('card-lang2');
+  js.classList.add('card-lang3');
+
+  const button = document.createElement('button');
+  button.classList.add('see-projects-btn');
+  button.setAttribute('id', '', concat('project', element.id));
+  cardContainer.appendChild(button);
+});
+
+
+
