@@ -1,5 +1,5 @@
-const { getElementById } = require('domutils');
-const { concat } = require('lodash');
+import { getElementById } from 'domutils';
+import { concat } from 'lodash';
 
 // Work Cards Section
 const data = [
