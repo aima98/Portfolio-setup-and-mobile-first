@@ -16,77 +16,53 @@ document.querySelectorAll('.menu-link').forEach((element) => element.addEventLis
 const data = [
   {
     id: 'Card1',
-    title1: 'Tonic',
-    title2: 'Tonic',
-    client1: 'CANOPY',
-    client2: 'CANOPY',
-    job1: 'Back End Dev',
-    job2: 'Back End Dev',
-    year1: 2015,
-    year2: 2015,
-    text1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    text2: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages1: ['html', 'css', 'javascript'],
-    languages2: ['html', 'css', 'javascript'],
-    bgImage1: 'firstCard',
-    bgImage2: 'firstCard2',
+    title: 'Tonic',
+    client: 'CANOPY',
+    job: 'Back End Dev',
+    year: 2015,
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
+    languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    bgImage: 'firstCard',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
   {
     id: 'Card2',
-    title1: 'Multi-Post Stories',
-    title2: 'Multi-Post Stories',
-    client1: 'CANOPY',
-    client2: 'FACEBOOK',
-    job1: 'Back End Dev',
-    job2: 'Full Stack Dev',
-    year1: 2015,
-    year2: 2015,
-    text1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    text2: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages1: ['html', 'css', 'javascript'],
-    languages2: ['html', 'Ruby on Rails', 'css', 'javascript'],
-    bgImage1: 'secondCard',
-    bgImage2: 'secondCard2',
+    title: 'Multi-Post Stories',
+    client: 'FACEBOOK',
+    job: 'Full Stack Dev',
+    year: 2015,
+    text: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
+    languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    bgImage: 'secondCard',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
   {
     id: 'Card3',
-    title1: 'Tonic',
-    title2: 'Facebook 360',
-    client1: 'FACEBOOK',
-    client2: 'CANOPY',
-    job1: 'Back End Dev',
-    job2: 'Full Stack Dev',
-    year1: 2015,
-    year2: 2018,
-    text1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    text2: 'Exploring the future of media in Facebook"s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    languages1: ['html', 'css', 'javascript'],
-    languages2: ['html', 'Ruby on Rails', 'css', 'javascript'],
-    bgImage1: 'thirdCard',
-    bgImage2: 'thirdCard2',
+    title: 'Facebook 360',
+    client: 'FACEBOOK',
+    job: 'Full Stack Dev',
+    year: 2018,
+    text: 'Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
+    languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    bgImage: 'thirdCard',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
   {
     id: 'Card4',
-    title1: 'Multi-Post Stories',
-    title2: 'Uber Navigation',
-    client1: 'CANOPY',
-    client2: 'Uber',
-    job1: 'Back End Dev',
-    job2: 'Lead Developer',
-    year1: 2015,
-    year2: 2015,
-    text1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    text2: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
-    languages1: ['html', 'css', 'javascript'],
-    languages2: ['html', 'Ruby on Rails', 'css', 'javascript'],
-    bgImage1: 'fourthCard',
-    bgImage2: 'fourthCard2',
+    title: 'Uber Navigation',
+    client: 'Uber',
+    job: 'Lead Developer',
+    year: 2015,
+    text: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car',
+    poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
+    languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    bgImage: 'fourthCard',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
@@ -95,191 +71,101 @@ const data = [
 const projectTitle = document.getElementById('Portfolio');
 
 data.forEach((element) => {
-  const container1 = document.createElement('div');
-  container1.className = 'card1';
-  projectTitle.appendChild(container1);
+  const container = document.createElement('div');
+  container.className = 'card';
+  projectTitle.appendChild(container);
 
-  const container2 = document.createElement('div');
-  container2.className = 'card2';
-  projectTitle.appendChild(container2);
+  const cardImg = document.createElement('div');
+  cardImg.className = ''.concat('card-bg', ' ', element.bgImage);
+  container.appendChild(cardImg);
 
-  const cardImg1 = document.createElement('div');
-  cardImg1.className = ''.concat('card-bg1', ' ', element.bgImage1);
-  container1.appendChild(cardImg1);
+  const cardContainer = document.createElement('div');
+  cardContainer.className = 'card-projects';
+  container.appendChild(cardContainer);
 
-  const cardImg2 = document.createElement('div');
-  cardImg2.className = ''.concat('card-bg2', ' ', element.bgImage2);
-  container2.appendChild(cardImg2);
+  const titleCard = document.createElement('h1');
+  titleCard.className = 'card-title';
+  cardContainer.appendChild(titleCard);
+  titleCard.appendChild(document.createTextNode(data[data.indexOf(element)].title));
 
-  const cardContainer1 = document.createElement('div');
-  cardContainer1.className = 'card-projects1';
-  container1.appendChild(cardContainer1);
+  const description = document.createElement('ul');
+  description.classList.add('des-list');
 
-  const cardContainer2 = document.createElement('div');
-  cardContainer2.className = 'card-projects2';
-  container2.appendChild(cardContainer2);
+  const company = document.createElement('li');
+  const job = document.createElement('li');
+  const year = document.createElement('li');
 
-  const titleCard1 = document.createElement('h1');
-  titleCard1.className = 'card-title1';
-  cardContainer1.appendChild(titleCard1);
-  titleCard1.appendChild(document.createTextNode(data[data.indexOf(element)].title1));
+  description.appendChild(company);
+  description.appendChild(job);
+  description.appendChild(year);
 
-  const titleCard2 = document.createElement('h1');
-  titleCard2.className = 'card-title2';
-  cardContainer2.appendChild(titleCard2);
-  titleCard2.appendChild(document.createTextNode(data[data.indexOf(element)].title2));
+  company.appendChild(document.createTextNode(element.client));
+  job.appendChild(document.createTextNode(element.job));
+  year.appendChild(document.createTextNode(element.year));
 
-  const description1 = document.createElement('ul');
-  description1.classList.add('des-list1');
+  cardContainer.appendChild(description);
+  company.classList.add('card-company');
+  job.classList.add('card-job');
+  year.classList.add('card-year');
 
-  const description2 = document.createElement('ul');
-  description2.classList.add('des-list2');
+  const paragraph = document.createElement('p');
+  paragraph.classList.add('card-text');
 
-  const company1 = document.createElement('li');
-  const job1 = document.createElement('li');
-  const year1 = document.createElement('li');
+  const ph = document.createTextNode(element.text);
+  cardContainer.appendChild(paragraph);
+  paragraph.appendChild(ph);
 
-  const company2 = document.createElement('li');
-  const job2 = document.createElement('li');
-  const year2 = document.createElement('li');
+  const languages = document.createElement('ul');
+  languages.classList.add('card-lang');
 
-  description1.appendChild(company1);
-  description1.appendChild(job1);
-  description1.appendChild(year1);
-
-  description2.appendChild(company2);
-  description2.appendChild(job2);
-  description2.appendChild(year2);
-
-  company1.appendChild(document.createTextNode(element.client1));
-  job1.appendChild(document.createTextNode(element.job1));
-  year1.appendChild(document.createTextNode(element.year1));
-
-  company2.appendChild(document.createTextNode(element.client2));
-  job2.appendChild(document.createTextNode(element.job2));
-  year2.appendChild(document.createTextNode(element.year2));
-
-  cardContainer1.appendChild(description1);
-  company1.classList.add('card-company1');
-  job1.classList.add('card-job1');
-  year1.classList.add('card-year1');
-
-  cardContainer2.appendChild(description2);
-  company2.classList.add('card-company2');
-  job2.classList.add('card-job2');
-  year2.classList.add('card-year2');
-
-  const paragraph1 = document.createElement('p');
-  paragraph1.classList.add('card-text1');
-
-  const paragraph2 = document.createElement('p');
-  paragraph2.classList.add('card-text2');
-
-  const ph1 = document.createTextNode(element.text1);
-  cardContainer1.appendChild(paragraph1);
-  paragraph1.appendChild(ph1);
-
-  const ph2 = document.createTextNode(element.text2);
-  cardContainer2.appendChild(paragraph2);
-  paragraph2.appendChild(ph2);
-
-  const languages1 = document.createElement('ul');
-  languages1.classList.add('card-lang1');
-
-  const languages2 = document.createElement('ul');
-  languages2.classList.add('card-lang2');
-
-  let html; let css; let js; let github; let ruby; let bootstrap; let RubyRails;
+  let html; let RubyRails; let css; let js; let github; let ruby; let bootstrap;
   // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < Object.keys(element.languages1).length; i++) {
-    html = document.createElement('li');
-    css = document.createElement('li');
-    js = document.createElement('li');
-  }
-
-  cardContainer1.appendChild(languages1);
-  languages1.appendChild(html);
-  languages1.appendChild(css);
-  languages1.appendChild(js);
-
-  html.classList.add('card-lang11');
-  css.classList.add('card-lang21');
-  js.classList.add('card-lang31');
-
-  html.appendChild(document.createTextNode(element.languages1[0]));
-  css.appendChild(document.createTextNode(element.languages1[1]));
-  js.appendChild(document.createTextNode(element.languages1[2]));
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < Object.keys(element.languages2).length; i++) {
+  for (let i = 0; i < Object.keys(element.languages).length; i++) {
     html = document.createElement('li');
     RubyRails = document.createElement('li');
     css = document.createElement('li');
     js = document.createElement('li');
   }
 
-  cardContainer2.appendChild(languages2);
-  languages2.appendChild(html);
-  languages2.appendChild(RubyRails);
-  languages2.appendChild(css);
-  languages2.appendChild(js);
+  cardContainer.appendChild(languages);
+  languages.appendChild(html);
+  languages.appendChild(RubyRails);
+  languages.appendChild(css);
+  languages.appendChild(js);
 
-  html.appendChild(document.createTextNode(element.languages2[0]));
-  RubyRails.appendChild(document.createTextNode(element.languages2[1]));
-  css.appendChild(document.createTextNode(element.languages2[2]));
-  js.appendChild(document.createTextNode(element.languages2[3]));
+  html.appendChild(document.createTextNode(element.languages[0]));
+  RubyRails.appendChild(document.createTextNode(element.languages[1]));
+  css.appendChild(document.createTextNode(element.languages[2]));
+  js.appendChild(document.createTextNode(element.languages[3]));
   // eslint-disable-next-line max-len
-  if (element.languages1[3] != null && element.languages1[4] != null && element.languages1[5] != null) {
+  if (element.languages[4] != null && element.languages[5] != null && element.languages[6] != null) {
     github = document.createElement('li');
     ruby = document.createElement('li');
     bootstrap = document.createElement('li');
 
-    languages1.appendChild(github);
-    languages1.appendChild(ruby);
-    languages1.appendChild(bootstrap);
+    languages.appendChild(github);
+    languages.appendChild(ruby);
+    languages.appendChild(bootstrap);
 
-    github.appendChild(document.createTextNode(element.languages1[3]));
-    ruby.appendChild(document.createTextNode(element.languages1[4]));
-    bootstrap.appendChild(document.createTextNode(element.languages1[5]));
+    github.appendChild(document.createTextNode(element.languages[4]));
+    ruby.appendChild(document.createTextNode(element.languages[5]));
+    bootstrap.appendChild(document.createTextNode(element.languages[6]));
 
     github.classList.add('card-lang11');
     ruby.classList.add('card-lang11');
     bootstrap.classList.add('card-lang31');
   }
-  // eslint-disable-next-line max-len
-  if (element.languages2[4] != null && element.languages2[5] != null && element.languages2[6] != null) {
-    github = document.createElement('li');
-    ruby = document.createElement('li');
-    bootstrap = document.createElement('li');
 
-    languages2.appendChild(github);
-    languages2.appendChild(ruby);
-    languages2.appendChild(bootstrap);
+  html.classList.add('card-lang11');
+  RubyRails.classList.add('card-lang10');
+  css.classList.add('card-lang21');
+  js.classList.add('card-lang31');
 
-    github.appendChild(document.createTextNode(element.languages2[4]));
-    ruby.appendChild(document.createTextNode(element.languages2[5]));
-    bootstrap.appendChild(document.createTextNode(element.languages2[6]));
-
-    github.classList.add('card-lang12');
-    ruby.classList.add('card-lang12');
-    bootstrap.classList.add('card-lang32');
-  }
-
-  html.classList.add('card-lang22');
-  RubyRails.classList.add('card-lang23');
-  css.classList.add('card-lang24');
-  js.classList.add('card-lang25');
-
-  const button1 = document.createElement('button');
-  button1.classList.add('see-projects-btn1');
-  button1.setAttribute('id', ''.concat('project', element.id));
-  cardContainer1.appendChild(button1);
-  button1.appendChild(document.createTextNode('See Project'));
-
-  const button2 = document.createElement('button');
-  button2.classList.add('see-projects-btn2');
-  button2.setAttribute('id', ''.concat('project', element.id));
-  cardContainer2.appendChild(button2);
-  button2.appendChild(document.createTextNode('See Project'));
+  const button = document.createElement('button');
+  button.classList.add('see-projects-btn');
+  button.setAttribute('id', ''.concat('project', element.id));
+  cardContainer.appendChild(button);
+  button.appendChild(document.createTextNode('See Project'));
 });
 
 const DATA = Object.keys(data).length;
