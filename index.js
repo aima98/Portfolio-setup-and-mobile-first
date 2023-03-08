@@ -115,6 +115,13 @@ data.forEach((element) => {
   cardContainer.appendChild(paragraph);
   paragraph.appendChild(ph);
 
+  const paragraphPop = document.createElement('p');
+  paragraphPop.classList.add('card-textPop');
+
+  const phPop = document.createTextNode(element.poptext);
+  cardContainer.appendChild(paragraphPop);
+  paragraphPop.appendChild(phPop);
+
   const languages = document.createElement('ul');
   languages.classList.add('card-lang');
 

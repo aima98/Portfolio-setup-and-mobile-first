@@ -411,6 +411,10 @@
     margin-top: -7px;
   }
 
+  .card-textPop {
+    display: none;
+  }
+
   .card-lang {
     display: flex;
     flex-direction: row;
@@ -1454,6 +1458,10 @@
     margin-top: -7px;
   }
 
+  .card-textPop {
+    display: none;
+  }
+
   .card-lang {
     display: flex;
     flex-direction: row;
@@ -2228,30 +2236,32 @@
 
   .firstCard {
     background-image: url(./assets/images/img-desktop-1.png);
-    height: 86%;
+    height: 71%;
     flex-basis: 50%;
+    margin-left: -74px;
   }
 
   .secondCard {
     background-image: url(./assets/images/img-desktop-2.png);
-    height: 86%;
+    height: 71%;
     flex-basis: 50%;
     order: 1;
-    margin-left: 111px;
+    margin-left: 52px;
   }
 
   .thirdCard {
     background-image: url(./assets/images/img-desktop-3.png);
-    height: 86%;
+    height: 71%;
     flex-basis: 50%;
+    margin-left: -74px;
   }
 
   .fourthCard {
     background-image: url(./assets/images/img-desktop-4.png);
-    height: 86%;
+    height: 71%;
     flex-basis: 50%;
     order: 1;
-    margin-left: 111px;
+    margin-left: 52px;
   }
 
   .card-projects {
@@ -2338,6 +2348,10 @@
     text-align: left;
     margin-left: 16px;
     margin-top: -7px;
+  }
+
+  .card-textPop {
+    display: none;
   }
 
   .card-lang {
@@ -2740,7 +2754,7 @@
     width: 569px;
     line-height: 28px;
     text-align: center;
-    margin-left: 399px;
+    margin-left: 303px;
     margin-right: auto;
     top: 90px;
   }
@@ -2782,7 +2796,7 @@
     color: #fff;
     margin-top: 46px;
     margin-bottom: -79px;
-    left: 594px;
+    left: 505px;
   }
 
   span .label1 {
@@ -2835,6 +2849,7 @@
     width: 1423px;
     height: 395px;
     margin-top: 50px;
+    margin-left: -81px;
   }
 
   .contact-form {
@@ -2847,9 +2862,9 @@
     text-align: center;
     background-image: url(assets/images/contact\ form\ background\ shapes.png);
     background-repeat: no-repeat;
-    background-position-x: 23px;
+    background-position-x: 3px;
     background-position-y: 80px;
-    background-size: 88%;
+    background-size: 100%;
   }
 
   form button {
