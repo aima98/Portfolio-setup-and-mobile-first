@@ -262,7 +262,7 @@
     background-size: contain;
     height: 108%;
     border-radius: 6px;
-    margin-top: -17px;
+    margin-top: -12px;
   }
 
   .close-btn img {
@@ -1085,7 +1085,7 @@
     padding: 16px;
     gap: 12px;
     width: 343px;
-    height: 713px;
+    height: 741px;
     left: calc(50% - 343px / 2);
     top: 19px;
     background: #fff;
@@ -1104,7 +1104,7 @@
     line-height: 44px;
     color: #172b4d;
     text-align: left;
-    margin-left: 322px;
+    margin-left: -4px;
     margin-top: -8px;
   }
 
@@ -1143,7 +1143,72 @@
     margin-top: 244px;
     width: 311px;
     height: 220px;
-    top: 22px;
+    top: 57px;
+  }
+
+  .des-pop {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: auto;
+    font-size: 14px;
+    margin-left: 56px;
+    margin-top: -22px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    width: 236px;
+    left: 10px;
+  }
+
+  .popClient {
+    width: 55px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+    margin-left: -57px;
+    margin-top: 60px;
+  }
+
+  .popJob {
+    width: 125px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+    margin-left: -185px;
+    margin-top: 60px;
+  }
+
+  .popYear {
+    position: absolute;
+    width: 29px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+    right: 41px;
+    margin-top: 60px;
+    margin-left: 33px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin-top: 66px;
+    margin-left: -184px;
   }
 
   .pop-content {
@@ -1174,8 +1239,8 @@
     letter-spacing: 0.03em;
     color: #6070ff;
     text-align: center;
-    margin-top: 64px;
-    margin-left: -1px;
+    margin-top: 87px;
+    margin-left: -2px;
   }
 
   .htmlpop {
@@ -1228,15 +1293,14 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    border-top: 1px solid #EBECF0;
-    margin-top: 439px;
+    border-top: 1px solid #ebecf0;
+    margin-top: 306px;
     height: 1px;
-  
   }
 
   .line {
     width: 311px;
-height: 17px;
+    height: 17px;
   }
 
   .footer .live-source2 {
@@ -1256,12 +1320,25 @@ height: 17px;
     margin-left: 158px;
   }
 
-  button img {
+  .cancel-btn img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 299px;
+    top: 10px;
+  }
+
+  .footer .live-source img,
+  .footer .live-source2 img {
     position: absolute;
     width: 24px;
     height: 24px;
     left: 96px;
     top: 12px;
+  }
+
+  .pop-bg2 {
+    display: none;
   }
 
   .footer .live-source {

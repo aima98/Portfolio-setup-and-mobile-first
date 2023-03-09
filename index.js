@@ -24,6 +24,8 @@ const data = [
     poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
     languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
     bgImage: 'firstCard',
+    Image: 'assets/images/Snapshoot1.png',
+    Image2: 'assets/images/img-desktop-1.png',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
@@ -37,6 +39,8 @@ const data = [
     poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
     languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
     bgImage: 'secondCard',
+    Image: 'assets/images/Snapshoot2.png',
+    Image2: 'assets/images/img-desktop-2.png',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
@@ -50,6 +54,8 @@ const data = [
     poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
     languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
     bgImage: 'thirdCard',
+    Image: 'assets/images/Snapshoot3.png',
+    Image2: 'assets/images/img-desktop-3.png',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
@@ -63,6 +69,8 @@ const data = [
     poptext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero culpa, excepturi harum corrupti inventore, quis cupiditate atque dolorem veritatis autem necessitatibus officiis vitae doloremque earum laudantium soluta praesentium odit at id aut aspernatur quas alias voluptates. Rerum veniam cum maiores? Aspernatur dolorem architecto et praesentium vitae earum voluptates exercitationem.',
     languages: ['html', 'Ruby on Rails', 'css', 'javascript'],
     bgImage: 'fourthCard',
+    Image: 'assets/images/Snapshoot4.png',
+    Image2: 'assets/images/img-desktop-4.png',
     live: 'https://aima98.github.io/Portfolio-setup-and-mobile-first/',
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
@@ -173,26 +181,28 @@ const projPop = (
   client,
   job,
   year,
-  bgImage,
+  Image,
+  Image2,
   poptext,
   live,
   source,
 ) => (
   `<div class="pop-header">
     <h3 class="pop-title">${title}</h3>
-    <button class="close-btn">
-      <img class="close" src="assets/images/cancel-icon.png alt=""/>
+    <button class="cancel-btn">
+      <img class="close" src="assets/images/cancel-icon.png" alt=""/>
     </button>
-    <div class="des-listpop">
-      <span class="popClient">${client}</span>
-      <img class="dot" src="assets/images/dot.png alt=""/>
-      <span>${job}</span>
-      <img class="dot" src="assets/images/dot.png alt=""/>
-      <span>${year}</span>
-    </div>
+    <ul class="des-pop">
+      <li class="popClient">${client}</span>
+      <li><img class="dot" src="assets/images/counter.svg" alt=""/></li>
+      <li class="popJob">${job}</li>
+      <li><img class="dot" src="assets/images/counter.svg" alt=""/></li>
+      <li class="popYear">${year}</li>
+    </ul>
   </div> 
   <div class="background-container">
-    <img class="pop-bg" src="${bgImage}" alt=""/>
+    <img class="pop-bg" src="${Image}" alt=""/>
+    <img class="pop-bg2" src="${Image2}" alt=""/>
   </div> 
   <div class="pop-content">
     <p class="pop-text">${poptext}</p>
@@ -231,7 +241,8 @@ seeProject.forEach((button) => {
         element.client,
         element.job,
         element.year,
-        element.bgImage,
+        element.Image,
+        element.Image2,
         element.poptext,
         element.languages,
         element.live,
