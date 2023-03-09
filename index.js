@@ -191,32 +191,27 @@ const projPop = (
       <img class="dot" src="assets/images/dot.png alt=""/>
       <span>${year}</span>
     </div>
-    </div> 
-    <div class="background-container">
-      <img class="pop-bg" src="${bgImage}" alt=""/>
-    </div> 
-    <div class="pop-content">
-      <p class="pop-text">${poptext}</p>
-      <ul class="des-listpop">
-        <li>Html</li>
-        <li>Css</li>
-        <li>JavasCript</li>
-        <li>Github</li>
-        <li>Ruby</li>
-        <li>Bootstrap</li>
-      </ul>
-    </div> 
-    <span class="line"></span>
-    <div class="footer">
-      <button class="live-source" onclick="window.open('${live}', '_blank')">
-        <span>See live</span>
-        <img src="assets/images/Icon-live.svg"/>
-      </button>
-      <button class="live-source" onclick="window.open('${source}', '_blank')">
-        <span>See live</span>
-        <img src="assets/images/Frame(1).svg"/>
-      </button>
-    </div>`;
+  </div> 
+  <div class="background-container">
+    <img class="pop-bg" src="${bgImage}" alt=""/>
+  </div> 
+  <div class="pop-content">
+    <p class="pop-text">${poptext}</p>
+    <ul class="des-listpop">
+      ${langList}
+    </ul>
+  </div> 
+  <span class="line"></span>
+  <div class="footer">
+    <button class="live-source" onclick="window.open('${live}', '_blank')">
+      <span>See live</span>
+      <img src="assets/images/Icon-live.svg"/>
+    </button>
+    <button class="live-source" onclick="window.open('${source}', '_blank')">
+      <span>See live</span>
+      <img src="assets/images/Frame(1).svg"/>
+    </button>
+  </div>`;
 };
 
 const popContainer = document.createElement('div');
@@ -241,9 +236,8 @@ seeProject.forEach((button) => {
       popContainer.innerHTML = htmlToInsert;
     });
   });
-});
 
-const closePop = document.querySelector('.close');
+  const closePop = document.querySelector('.close');
 
 closePop.addEventListener('click', () => {
   const overlay = document.querySelector('.popOverlay');
