@@ -175,7 +175,6 @@ const projPop = (
   year,
   bgImage,
   poptext,
-  languages,
   live,
   source,
 ) => {
@@ -198,7 +197,12 @@ const projPop = (
   <div class="pop-content">
     <p class="pop-text">${poptext}</p>
     <ul class="des-listpop">
-      ${langList}
+      <li>Html</li>
+      <li>Css</li>
+      <li>JavaScript</li>
+      <li>Github</li>
+      <li>Ruby</li>
+      <li>Bootstrap</li>
     </ul>
   </div> 
   <span class="line"></span>
@@ -217,30 +221,30 @@ const projPop = (
 const popContainer = document.createElement('div');
 const seeProject = document.querySelectorAll('.see-projects-btn');
 seeProject.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', () => { 
     data.forEach((project) => {
       const overlay = document.getElementById('overlay');
       overlay.appendChild(popContainer);
-      const htmlToInsert = projPop(
+      const htmlToInsert = projPop( 
         project.id,
-        project.title,
+        project.title, 
         project.client,
         project.job,
         project.year,
-        project.bgImage,
+        project.bgImage,         
         project.poptext,
         project.languages,
         project.live,
         project.source,
-      );
-      popContainer.innerHTML = htmlToInsert;
-    });
-  });
-
-  const closePop = document.querySelector('.close');
-
+      );  
+      popContainer.innerHTML = htmlToInsert; 
+   });
+ });
+});
+   
+const closePop = document.querySelector('.close-btn'); 
 closePop.addEventListener('click', () => {
   const overlay = document.querySelector('.popOverlay');
   popContainer.innerHTML = '';
-  overlay.style.display = 'none';
+  overlay.style.display = 'none';   
 });
