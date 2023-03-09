@@ -197,23 +197,23 @@ const projPop = (
   <div class="pop-content">
     <p class="pop-text">${poptext}</p>
     <ul class="des-listpop">
-      <li>Html</li>
-      <li>Css</li>
-      <li>JavaScript</li>
-      <li>Github</li>
-      <li>Ruby</li>
-      <li>Bootstrap</li>
+      <li class="htmlpop">Html</li>
+      <li class="csspop">Css</li>
+      <li class="jspop">JavaScript</li>
+      <li class="gitpop">Github</li>
+      <li class="rubpop">Ruby</li>
+      <li class="bootpop">Bootstrap</li>
     </ul>
   </div> 
-  <span class="line"></span>
+  <a class="line"></a>
   <div class="footer">
     <button class="live-source" onclick="window.open('${live}', '_blank')">
       <span>See live</span>
       <img src="assets/images/Icon-live.svg"/>
     </button>
-    <button class="live-source" onclick="window.open('${source}', '_blank')">
-      <span>See live</span>
-      <img src="assets/images/Frame(1).svg"/>
+    <button class="live-source2" onclick="window.open('${source}', '_blank')">
+      <span>See Live</span>
+      <img src="assets/images/Source.svg"/>
     </button>
   </div>`
 );
