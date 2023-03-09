@@ -217,7 +217,7 @@ const projPop = (
       <span>See live</span>
       <img src="assets/images/Frame(1).svg"/>
     </button>
-  </div>`;   
+  </div>`;
 };
 
 const popContainer = document.createElement('div');
@@ -225,7 +225,7 @@ const seeProject = document.querySelectorAll('.see-projects-btn');
 seeProject.forEach((button) => {
   button.addEventListener('click', () => {
     data.forEach((project) => {
-      const overlay = document.getElementById('overlay'); 
+      const overlay = document.getElementById('overlay');
       overlay.appendChild(popContainer);
       const htmlToInsert = projPop(
         project.id,
@@ -238,11 +238,11 @@ seeProject.forEach((button) => {
         project.languages,
         project.live,
         project.source,
-      );  
-      popContainer.innerHTML = htmlToInsert; 
+      );
+      popContainer.innerHTML = htmlToInsert;
     });
   });
-  
+
   const closePop = document.querySelector('.close');
 
   closePop.addEventListener('click', () => {
