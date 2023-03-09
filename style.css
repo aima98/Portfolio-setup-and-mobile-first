@@ -1076,6 +1076,23 @@
 
   /* ------------- Popup Window ------------- */
 
+  .pop-container {
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 343px;
+    height: 713px;
+    left: calc(50% - 343px / 2);
+    top: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+
   .pop-title {
     width: 295px;
     height: 36px;
@@ -1106,7 +1123,7 @@
     height: 32px;
   }
 
-  .popOverlay {
+  #overlay {
     position: fixed;
     display: none;
     background: #b4b4bd;
@@ -1145,20 +1162,12 @@
   .pop-content {
     position: fixed;
     display: flex;
-    opacity: unset;
     flex-direction: column;
-    align-items: center;
-    padding: 16px;
+    align-items: flex-start;
+    padding: 0;
     gap: 12px;
-    height: 713px;
-    left: calc(51% - 343px / 2);
-    top: 0;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    width: 80%;
-    background: #f7f7f9;
-    overflow: hidden;
-    margin-top: 1em;
+    width: 311px;
+    height: 84px;
   }
 
   .pop-lang {

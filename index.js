@@ -177,8 +177,8 @@ const projPop = (
   poptext,
   live,
   source,
-) => {
-  return `<div class="pop-header">
+) => (
+  `<div class="pop-header">
     <h3 class="pop-title">${title}</h3>
     <button class="close-btn">
       <img class="close" src="assets/images/cancel-icon.png alt=""/>
@@ -215,29 +215,30 @@ const projPop = (
       <span>See live</span>
       <img src="assets/images/Frame(1).svg"/>
     </button>
-  </div>`;
-};
+  </div>`
+);
 
 const popContainer = document.createElement('div');
+popContainer.classList.add('pop-container');
 const seeProject = document.querySelectorAll('.see-projects-btn');
 seeProject.forEach((button) => {
   button.addEventListener('click', () => {
-    data.forEach((project) => {
+    data.forEach((element) => {
       const overlay = document.getElementById('overlay');
       overlay.appendChild(popContainer);
       const htmlToInsert = projPop(
-        project.id,
-        project.title,
-        project.client,
-        project.job,
-        project.year,
-        project.bgImage,
-        project.poptext,
-        project.languages,
-        project.live,
-        project.source,
+        element.title,
+        element.client,
+        element.job,
+        element.year,
+        element.bgImage,
+        element.poptext,
+        element.languages,
+        element.live,
+        element.source,
       );
       popContainer.innerHTML = htmlToInsert;
+      overlay.style.display = 'block';
     });
   });
 });
