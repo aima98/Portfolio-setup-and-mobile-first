@@ -179,13 +179,7 @@ const projPop = (
   live,
   source,
 ) => {
-  let langList = '';
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < languages.length; i++) {
-    langList += <li class="pop-lang">${languages[i]}</li>;
-  }
-
-  return `<div class="pop-header"> 
+  return `<div class="pop-header">
     <h3 class="pop-title">${title}</h3>
     <button class="close-btn">
       <img class="close" src="assets/images/cancel-icon.png alt=""/>
@@ -197,27 +191,32 @@ const projPop = (
       <img class="dot" src="assets/images/dot.png alt=""/>
       <span>${year}</span>
     </div>
-  </div> 
-  <div class="background-container">
-    <img class="pop-bg" src="${bgImage}" alt=""/>
-  </div> 
-  <div class="pop-content">
-    <p class="pop-text">${poptext}</p>
-    <ul class="des-listpop">
-      ${langList}
-    </ul>
-  </div> 
-  <span class="line"></span>
-  <div class="footer">
-    <button class="live-source" onclick="window.open('${live}', '_blank')">
-      <span>See live</span>
-      <img src="assets/images/Icon-live.svg"/>
-    </button>
-    <button class="live-source" onclick="window.open('${source}', '_blank')">
-      <span>See live</span>
-      <img src="assets/images/Frame(1).svg"/>
-    </button>
-  </div>`;   
+    </div> 
+    <div class="background-container">
+      <img class="pop-bg" src="${bgImage}" alt=""/>
+    </div> 
+    <div class="pop-content">
+      <p class="pop-text">${poptext}</p>
+      <ul class="des-listpop">
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavasCript</li>
+        <li>Github</li>
+        <li>Ruby</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div> 
+    <span class="line"></span>
+    <div class="footer">
+      <button class="live-source" onclick="window.open('${live}', '_blank')">
+        <span>See live</span>
+        <img src="assets/images/Icon-live.svg"/>
+      </button>
+      <button class="live-source" onclick="window.open('${source}', '_blank')">
+        <span>See live</span>
+        <img src="assets/images/Frame(1).svg"/>
+      </button>
+    </div>`;
 };
 
 const popContainer = document.createElement('div');
@@ -225,7 +224,7 @@ const seeProject = document.querySelectorAll('.see-projects-btn');
 seeProject.forEach((button) => {
   button.addEventListener('click', () => {
     data.forEach((project) => {
-      const overlay = document.getElementById('overlay'); 
+      const overlay = document.getElementById('overlay');
       overlay.appendChild(popContainer);
       const htmlToInsert = projPop(
         project.id,
@@ -238,16 +237,16 @@ seeProject.forEach((button) => {
         project.languages,
         project.live,
         project.source,
-      );  
-      popContainer.innerHTML = htmlToInsert; 
+      );
+      popContainer.innerHTML = htmlToInsert;
     });
   });
-  
-  const closePop = document.querySelector('.close');
+});
 
-  closePop.addEventListener('click', () => {
-    const overlay = document.querySelector('.popOverlay');
-    popContainer.innerHTML = '';
-    overlay.style.display = 'none';
-  });
+const closePop = document.querySelector('.close');
+
+closePop.addEventListener('click', () => {
+  const overlay = document.querySelector('.popOverlay');
+  popContainer.innerHTML = '';
+  overlay.style.display = 'none';
 });
