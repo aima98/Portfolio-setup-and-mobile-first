@@ -15,7 +15,7 @@ document.querySelectorAll('.menu-link').forEach((element) => element.addEventLis
 
 const data = [
   {
-    id: 'Card1',
+    id: '1',
     title: 'Tonic',
     client: 'CANOPY',
     job: 'Back End Dev',
@@ -28,7 +28,7 @@ const data = [
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'Card2',
+    id: '2',
     title: 'Multi-Post Stories',
     client: 'FACEBOOK',
     job: 'Full Stack Dev',
@@ -41,7 +41,7 @@ const data = [
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'Card3',
+    id: '3',
     title: 'Facebook 360',
     client: 'FACEBOOK',
     job: 'Full Stack Dev',
@@ -54,7 +54,7 @@ const data = [
     source: 'https://github.com/aima98/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'Card4',
+    id: '4',
     title: 'Uber Navigation',
     client: 'Uber',
     job: 'Lead Developer',
@@ -115,13 +115,6 @@ data.forEach((element) => {
   cardContainer.appendChild(paragraph);
   paragraph.appendChild(ph);
 
-  const paragraphPop = document.createElement('p');
-  paragraphPop.classList.add('card-textPop');
-
-  const phPop = document.createTextNode(element.poptext);
-  cardContainer.appendChild(paragraphPop);
-  paragraphPop.appendChild(phPop);
-
   const languages = document.createElement('ul');
   languages.classList.add('card-lang');
 
@@ -175,155 +168,86 @@ data.forEach((element) => {
   button.appendChild(document.createTextNode('See Project'));
 });
 
-const DATA = Object.keys(data).length;
-const popOverlay = document.getElementById('popOverlay');
-// eslint-disable-next-line no-plusplus
-for (let j = 1; j <= DATA; j++) {
-  const idz = 'project'.concat(j);
-  const showDetails = document.getElementById(`${idz}`);
+const projPop = (
+  title,
+  client,
+  job,
+  year,
+  bgImage,
+  poptext,
+  languages,
+  live,
+  source,
+) => {
+  let langList = '';
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < languages.length; i++) {
+    langList += <li class="pop-lang">${languages[i]}</li>;
+  }
 
-  showDetails.addEventListener('click', () => {
-    popOverlay.style.display = 'block';
+  return `<div class="pop-header"> 
+    <h3 class="pop-title">${title}</h3>
+    <button class="close-btn">
+      <img class="close" src="assets/images/cancel-icon.png alt=""/>
+    </button>
+    <div class="des-listpop">
+      <span class="popClient">${client}</span>
+      <img class="dot" src="assets/images/dot.png alt=""/>
+      <span>${job}</span>
+      <img class="dot" src="assets/images/dot.png alt=""/>
+      <span>${year}</span>
+    </div>
+  </div> 
+  <div class="background-container">
+    <img class="pop-bg" src="${bgImage}" alt=""/>
+  </div> 
+  <div class="pop-content">
+    <p class="pop-text">${poptext}</p>
+    <ul class="des-listpop">
+      ${langList}
+    </ul>
+  </div> 
+  <span class="line"></span>
+  <div class="footer">
+    <button class="live-source" onclick="window.open('${live}', '_blank')">
+      <span>See live</span>
+      <img src="assets/images/Icon-live.svg"/>
+    </button>
+    <button class="live-source" onclick="window.open('${source}', '_blank')">
+      <span>See live</span>
+      <img src="assets/images/Frame(1).svg"/>
+    </button>
+  </div>`;   
+};
 
-    const popContent = document.createElement('div');
-    popContent.className = 'pop-content';
-    popOverlay.appendChild(popContent);
-
-    const popupTitle = document.createElement('div');
-    popupTitle.className = 'top-popup';
-    popContent.appendChild(popupTitle);
-
-    const projectData = data.find((x) => x.id === j);
-
-    const popTitle = document.createElement('h3');
-    popTitle.classList.add('title-popup');
-    popTitle.appendChild(document.createTextNode(projectData.title));
-    popupTitle.appendChild(popTitle);
-
-    const closePop = document.createElement('img');
-    closePop.className = 'cancel-icon';
-    closePop.setAttribute('id', 'cancel-icon');
-    closePop.src = './img/cancel-icon.png';
-    popupTitle.appendChild(closePop);
-
-    const popDescription = document.createElement('ul');
-    popDescription.classList.add('des-list');
-
-    const popCompany = document.createElement('li');
-    const popJob = document.createElement('li');
-    const popYear = document.createElement('li');
-
-    popDescription.appendChild(popCompany);
-    popDescription.appendChild(popJob);
-    popDescription.appendChild(popYear);
-
-    popCompany.appendChild(document.createTextNode(projectData.client));
-    popJob.appendChild(document.createTextNode(projectData.job));
-    popYear.appendChild(document.createTextNode(projectData.year));
-
-    popContent.appendChild(popDescription);
-    popCompany.classList.add('card-company');
-    popJob.classList.add('card-job');
-    popYear.classList.add('card-year');
-
-    const popImg = document.createElement('div');
-    popImg.className = 'popup-img';
-    popContent.appendChild(popImg);
-
-    const popParagraph = document.createElement('p');
-    popParagraph.classList.add('pop-text');
-    popParagraph.appendChild(document.createTextNode(projectData.text));
-    popContent.appendChild(popParagraph);
-
-    const popLanguages = document.createElement('ul');
-    popLanguages.classList.add('pop-lang');
-
-    let popHtml; let popCss; let popJs; let popGithub; let popRuby; let popBootstrap;
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < Object.keys(projectData.languages).length; i++) {
-      popHtml = document.createElement('li');
-      popCss = document.createElement('li');
-      popJs = document.createElement('li');
-    }
-    popContent.appendChild(popLanguages);
-    popLanguages.appendChild(popHtml);
-    popLanguages.appendChild(popCss);
-    popLanguages.appendChild(popJs);
-
-    popHtml.appendChild(document.createTextNode(projectData.languages[0]));
-    popCss.appendChild(document.createTextNode(projectData.languages[1]));
-    popJs.appendChild(document.createTextNode(projectData.languages[2]));
-    // eslint-disable-next-line max-len
-    if (projectData.languages[3] != null && projectData.languages[4] != null && projectData.languages[5] != null) {
-      popGithub = document.createElement('li');
-      popRuby = document.createElement('li');
-      popBootstrap = document.createElement('li');
-
-      popLanguages.appendChild(popGithub);
-      popLanguages.appendChild(popRuby);
-      popLanguages.appendChild(popBootstrap);
-
-      popGithub.appendChild(document.createTextNode(projectData.languages[3]));
-      popRuby.appendChild(document.createTextNode(projectData.languages[4]));
-      popBootstrap.appendChild(document.createTextNode(projectData.languages[5]));
-
-      popGithub.classList.add('card-lang1');
-      popRuby.classList.add('card-lang1');
-      popBootstrap.classList.add('card-lang3');
-    }
-
-    popHtml.classList.add('card-lang1');
-    popCss.classList.add('card-lang2');
-    popJs.classList.add('card-lang3');
-
-    const popHr = document.createElement('hr');
-    popHr.classList.add('line');
-    popContent.appendChild(popHr);
-
-    const liveSource = document.createElement('div');
-    liveSource.className = 'live-source';
-    popContent.appendChild(liveSource);
-
-    const liveButton = document.createElement('button');
-    liveButton.setAttribute('class', 'live');
-    liveButton.type = 'button';
-    liveSource.appendChild(liveButton);
-    liveButton.appendChild(document.createTextNode('See Live'));
-
-    const liveIcon = document.createElement('img');
-    liveIcon.setAttribute('class', 'liveImg');
-    liveIcon.src = './img/Icon-live.svg';
-    liveButton.appendChild(liveIcon);
-
-    document.querySelectorAll('.live').forEach((live) => {
-      live.addEventListener('click', () => {
-        window.open(projectData.live);
-      });
-    });
-
-    const sourceButton = document.createElement('button');
-    sourceButton.setAttribute('class', 'source');
-    sourceButton.type = 'button';
-    liveSource.appendChild(sourceButton);
-    sourceButton.appendChild(document.createTextNode('See Source'));
-
-    const sourceIcon = document.createElement('img');
-    sourceIcon.setAttribute('class', 'sourceImg');
-    sourceIcon.src = './img/Frame.svg';
-    sourceButton.appendChild(sourceIcon);
-
-    document.querySelectorAll('.source').forEach((source) => {
-      source.addEventListener('click', () => {
-        window.open(projectData.source);
-      });
-    });
-
-    const closeProjects = document.querySelectorAll('.cancel-icon');
-    closeProjects.forEach((closeProject) => {
-      closeProject.addEventListener('click', () => {
-        popContent.style.display = 'none';
-        popOverlay.style.display = 'none';
-      });
+const popContainer = document.createElement('div');
+const seeProject = document.querySelectorAll('.see-projects-btn');
+seeProject.forEach((button) => {
+  button.addEventListener('click', () => {
+    data.forEach((project) => {
+      const overlay = document.getElementById('overlay'); 
+      overlay.appendChild(popContainer);
+      const htmlToInsert = projPop(
+        project.id,
+        project.title,
+        project.client,
+        project.job,
+        project.year,
+        project.bgImage,
+        project.poptext,
+        project.languages,
+        project.live,
+        project.source,
+      );  
+      popContainer.innerHTML = htmlToInsert; 
     });
   });
-}
+  
+  const closePop = document.querySelector('.close');
+
+  closePop.addEventListener('click', () => {
+    const overlay = document.querySelector('.popOverlay');
+    popContainer.innerHTML = '';
+    overlay.style.display = 'none';
+  });
+});
