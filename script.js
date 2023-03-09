@@ -12,3 +12,13 @@ document.querySelectorAll('.menu-link').forEach((element) => element.addEventLis
   menuBar.classList.remove('active');
   mobileMenu.classList.remove('active');
 }));
+const EMAIL_INVALID = 'Please enter your email address in lowercase';
+  const form = document.querySelector('form');
+  form.addEventListener('submit', (event)) => {
+    event.preventDefault();
+    const email = document.querySelector("input[type='email']");
+    const emailValid = validateEmail(email, EMAIL_INVALID);
+    if (emailValid) {
+      showSuccess();
+      form.submit();
+    }}
