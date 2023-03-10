@@ -29,6 +29,7 @@ body {
 header {
   display: flex;
   padding: 40px 20px;
+  margin-top: -32px;
 }
 
 .home {
@@ -46,7 +47,7 @@ header {
   background-position-y: -2px;
   background-size: 100% 89%;
   height: 611px;
-  margin-top: -59px;
+  margin-top: -39px;
 }
 
 .logo {
@@ -158,11 +159,13 @@ header {
 }
 
 .social-title {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
+  font-weight: 500;
   color: #7f8cff;
   margin: 0.6em;
   line-height: 24px;
+  margin-left: 18px;
 }
 
 .social-icons {
@@ -172,6 +175,8 @@ header {
   padding: 10px;
   margin-bottom: 5em;
   gap: 1.1em;
+  margin-left: 8px;
+  margin-top: -10px;
 }
 
 .works {
@@ -208,7 +213,6 @@ header {
 }
 
 .card-bg {
-  background-size: 100%;
   flex-basis: 12em;
   width: 90%;
   border-radius: 6px;
@@ -216,6 +220,9 @@ header {
 
 .card1 {
   background: url(./img/Snapshoot-Portfolio-1.png) no-repeat center center;
+  background-size: 100%;
+  width: 295px;
+  height: 220px;
 }
 
 .card2 {
@@ -248,6 +255,8 @@ header {
   padding: 0 10px;
   line-height: 0;
   font-family: "Poppins", sans-serif;
+  margin-top: 12px;
+  margin-left: 3px;
 }
 
 .card-title-2 {
@@ -266,6 +275,8 @@ header {
   list-style: none;
   justify-content: space-between;
   margin-right: auto;
+  margin-left: 6px;
+  margin-top: -6px;
   padding: 0 10px;
   width: 250px;
   font-size: 14px;
@@ -276,36 +287,42 @@ header {
   color: #344563;
   font-size: 15px;
   font-weight: 600;
+  margin-left: 0;
 }
 
 .card-job-desc .card-job {
   color: #7a869a;
   font-size: 15px;
+  margin-left: -2px;
 }
 
 .card-job-desc .card-year {
   color: #7a869a;
   font-size: 15px;
+  margin-right: 16px;
 }
 
 .card-persona {
   color: #344563;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
   padding: 0 10px;
   text-align: left;
   font-family: "Poppins", sans-serif;
+  margin-left: 7px;
 }
 
 .card-languages {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  width: 210px;
+  width: 193px;
   margin-right: auto;
   padding: 0 10px;
   font-family: "Poppins", sans-serif;
   flex-wrap: wrap;
+  margin-left: 7px;
 }
 
 .card-lang1 {
@@ -321,7 +338,7 @@ header {
 }
 
 .card-lang2 {
-  width: 35px;
+  width: 46px;
   text-align: center;
   background: #ebebff;
   font-size: 12px;
@@ -353,25 +370,32 @@ header {
   padding: 0 10px;
   border-radius: 10px;
   align-items: center;
-  font-size: 16px;
+  font-size: 17px;
   color: #396df2;
   background: transparent;
   height: 50px;
   width: 120px;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 24px;
   display: flex;
   margin: 0.5em;
+  margin-left: 18px;
+}
+
+.about-contact {
+  width: 100%;
 }
 
 .about-myself {
   width: 100%;
-  height: auto;
+  height: 1120px;
   border: 1px solid #fff;
   border-top-right-radius: 80px;
   background: #fff;
-  padding-top: 100px;
+  padding-top: 4px;
   margin-bottom: 5em;
+  margin-top: 138px;
 }
 
 .about-container {
@@ -383,6 +407,7 @@ header {
   font-weight: 700;
   color: #172b4d;
   width: 10px;
+  margin-left: 8px;
 }
 
 .about-me-resume {
@@ -392,12 +417,15 @@ header {
   font-size: 17px;
   font-style: normal;
   text-align: left;
+  margin-left: 8px;
+  margin-top: -20px;
 }
 
 .connect {
   font-size: 16px;
   font-weight: 500;
   color: #7f8cff;
+  margin-left: 8px;
 }
 
 .social-media {
@@ -405,6 +433,8 @@ header {
   display: flex;
   padding: 0;
   width: 220px;
+  margin-left: 5px;
+  margin-top: -9px;
 }
 
 .social-media li {
@@ -423,6 +453,7 @@ header {
   font-weight: 500;
   background: transparent;
   margin-bottom: 2em;
+  margin-left: 6px;
 }
 
 .my-resume {
@@ -474,17 +505,19 @@ header {
 }
 
 .contact {
-  width: 100%;
   background: #6070ff;
   border-top-left-radius: 90px;
-  padding: 3rem 2rem;
+  padding: 1rem 1rem;
   text-align: center;
   background-image: url(./img/contact-form-shapes.png);
-  background-position-x: 192px;
-  background-position-y: 19px;
+  background-position-x: 147px;
+  background-position-y: 40px;
   background-repeat: no-repeat;
   padding-top: 90px;
   background-size: 56%;
+  width: 100%;
+  height: 703px;
+  margin-top: -184px;
 }
 
 .contact-bg {
@@ -494,19 +527,36 @@ header {
 
 .title-contact {
   color: #fff;
-  font-size: 40px;
+  font-style: normal;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  width: 801px;
+  height: 56px;
+  margin-left: -221px;
+  margin-top: 12px;
 }
 
 .contact-info {
   color: #fff;
-  font-size: 19px;
   margin-bottom: 2rem;
+  width: 327px;
+  height: 102px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 10px;
+  margin-top: -19px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  margin-top: 69px;
+  margin-left: 10px;
+  
+width: 327px;
 }
 
 .contact-form input,
@@ -534,6 +584,7 @@ textarea:focus {
   border-radius: 8px;
   outline: none;
   border: 0;
+  margin-top: -39px;
 }
 
 button:hover {
