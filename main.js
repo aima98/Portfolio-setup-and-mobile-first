@@ -211,7 +211,7 @@ for (let j = 1; j <= dataSize; j++) {
     popupContent.appendChild(bioPop);
 
     const languagesPop = document.createElement('ul');
-    languagesPop.classList.add('card-languages');
+    languagesPop.classList.add('popup-languages');
 
     const htmlPop = document.createElement('li');
     const cssPop = document.createElement('li');
