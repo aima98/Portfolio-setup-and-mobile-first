@@ -189,9 +189,7 @@ const projPop = (
 ) => (
   `<div class="pop-header">
     <h3 class="pop-title">${title}</h3>
-    <button class="cancel-btn">
-      <img class="close" src="assets/images/cancel-icon.png" alt=""/>
-    </button>
+    <img class="close" id="closeIcon" src="assets/images/cancel-icon.png"/>
     <ul class="des-pop">
       <li class="popClient">${client}</span>
       <li><img class="dot" src="assets/images/counter.svg" alt=""/></li>
@@ -254,9 +252,11 @@ seeProject.forEach((button) => {
   });
 });
 
-const closePop = document.querySelector('.close-btn');
-closePop.addEventListener('click', () => {
-  const overlay = document.querySelector('.popOverlay');
-  popContainer.innerHTML = '';
-  overlay.style.display = 'none';
-});
+const closePop = document.getElementById('closeIcon');
+if(closePop){
+  closePop.addEventListener('click', () => {
+    const overlay = document.getElementById('#overlay');
+    popContainer.innerHTML = '';
+    overlay.style.display = 'none';
+  });
+}
